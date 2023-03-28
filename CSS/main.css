@@ -10,20 +10,21 @@ body {
 
 .hero-image{
   background-image:linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2)), url("https://i.imgur.com/OztA1d4.png");
-  width: 100%;
+  /* width: 100%; */
   margin-left: 0;
   margin-right: 0;
   background-size: cover;
   background-color: #ffffffe8;
   /* background-blend-mode: hard-light; */
-  width:100%;
-  background-size: 105% 100em;
+ 
+  background-size: 120% 100em;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  animation: mymove 10s alternate infinite;
+
+  animation: mymove 8s alternate infinite;
 }
+
 
 
 @keyframes mymove {
@@ -37,6 +38,239 @@ body {
 
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .hero-image{
+    background-size: 300% 100em;
+    animation: mymove 25s alternate infinite;
+  }
+}
+
+
+.blossom{
+  width:75%;
+}
+
+@media only screen and (max-width: 900px) {
+  .blossom{
+    width:100%;
+  }
+}
+
+
+
+@keyframes rot3d{
+  0% {
+  transform: rotate3d(0, 1, 0, 0turn);
+/* transform:scale(1); */
+  }
+
+50%{
+  transform: rotate3d(0, 1, 0, -0.1turn);
+/* transform:scale(1.01); */
+
+}
+
+100% {
+transform: rotate3d(0, 1, 0, 0turn);
+/* transform:scale(1); */
+}
+
+}
+
+
+
+
+@keyframes lefta{
+  0% {
+    transform:rotatez(0deg);
+
+  }
+  25%{
+    transform: rotatez(-25deg);
+
+  }
+  50% {
+    transform:rotatez(-1deg);
+
+  }
+  75% {
+    transform:rotatez(-25deg);
+
+  }
+  100% {
+    transform:rotatez(0deg);
+
+  }
+  }
+
+
+  @keyframes righta{
+    0% {
+      transform:rotatez(0deg);
+
+    }
+    25%{
+      transform: rotatez(25deg);
+
+    }
+    50% {
+      transform:rotatez(1deg);
+
+    }
+    75% {
+      transform:rotatez(25deg);
+
+    }
+    100% {
+      transform:rotatez(0deg);
+
+    }
+    }
+
+
+
+
+  @keyframes topa{
+    0% {
+      transform:translateY(0px);
+
+    }
+    25%{
+      transform: translateY(45px);
+
+    }
+    50% {
+      transform:translateY(0px);
+
+    }
+    75% {
+    transform: translateY(45px);
+
+    }
+    100% {
+        transform:translateY(0px);
+
+    }
+    }
+
+    @keyframes shine{
+      0% {
+        transform:scale(1);
+
+      }
+      25%{
+        transform:scale(0.9,0.8);
+
+      }
+      50% {
+          transform:scale(1);
+
+      }
+      75% {
+    transform:scale(0.9);
+
+      }
+      100% {
+          transform:scale(1);
+
+      }
+      }
+
+      @keyframes pulse{
+        0% {
+          transform:scale(1);
+
+        }
+        25%{
+          transform:scale(0.95);
+
+        }
+        50% {
+            transform:scale(1,1.2);
+
+        }
+        75% {
+      transform:scale(0.95);
+
+        }
+        100% {
+            transform:scale(1);
+
+        }
+        }
+      @keyframes shiner{
+        0% {
+          transform:scale(1);
+
+        }
+        25%{
+          transform:scale(0.8);
+
+        }
+        50% {
+            transform:scale(1);
+
+        }
+        75% {
+      transform:scale(0.5);
+
+        }
+        100% {
+            transform:scale(1);
+
+        }
+        }
+  #bush_L:hover{
+    animation: lefta 10s ease alternate;
+    transform-origin: right;
+    transform-box:fill-box;
+  }
+  #bush_R:hover{
+    animation: righta 10s ease alternate;
+    transform-origin: left;
+    transform-box:fill-box;
+  }
+  #bush_top:hover{
+    animation: topa 10s ease alternate;
+    transform-origin: left;
+    transform-box:fill-box;
+  }
+
+
+  #bush_L{
+    animation: shine 4s ease alternate;
+    transform-origin: center;
+   transform-box:fill-box;
+   animation-iteration-count: infinite;
+  }
+  #bush_R{
+    animation: shine 4s ease alternate;
+    transform-origin: center;
+   transform-box:fill-box;
+   animation-iteration-count: infinite;
+  }
+  #bush_top{
+    animation: shine 4s ease alternate;
+    transform-origin: center;
+   transform-box:fill-box;
+   animation-iteration-count: infinite;
+  }
+
+
+
+  #sunShine{
+    animation: shiner 40s ease alternate;
+    transform-origin: 75% 100px;
+   transform-box:fill-box;
+   animation-iteration-count: infinite;
+
+  }
+
+
+
+
+
 canvas {
   display: block;
 }
@@ -121,3 +355,6 @@ width:50vw;
 height:50vh; */
 
   }
+
+
+ 
