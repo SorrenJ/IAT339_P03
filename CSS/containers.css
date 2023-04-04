@@ -110,7 +110,13 @@
     height:50vh;
     }
 
+    @media only screen and (max-width: 800px) {
+      .section1{
+        height:100%;
+      }
 
+
+    }
 /* project container3 */
 .flex-container3 {
   display: flex;
