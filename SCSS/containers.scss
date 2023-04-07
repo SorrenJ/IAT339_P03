@@ -43,20 +43,35 @@ $white: #ffffff;
     text-align: left;
     height:100%;
     font-size: 30px;
-    margin:100px;
+    // margin:100px;
     margin-top: 5%;
 
 }
 
 
+
+/* project container */
+.flex-container-banner {
+  @include dark-container;
+     }
+    
+    
+     
+     .flex-banner-item-left {
+  @include dark-container-item-left
+  
+  
+  }
+  
+
 @media only screen and (max-width: 800px) {
     /* project container */
-    @mixin dark-container {
+    .flex-container-banner  {
     text-align:center;
        flex-direction:column;
      }
     
-     @mixin dark-container-item-left{
+     .flex-banner-item-left{
       /* background-color: #f1f1f1; */
       width: 100%;
       font-size: 25px;
@@ -69,7 +84,7 @@ $white: #ffffff;
       padding-bottom: 5vh;
     }
     
-    @mixin dark-container-item-right{
+    .flex-banner-item-right{
      /* background-color: #f1f1f1; */
      margin-left: 15%;
      margin-right: 15%;
@@ -82,19 +97,6 @@ $white: #ffffff;
     
     }
 
-
-/* project container */
-.flex-container-banner {
-@include dark-container;
-   }
-  
-  
-   
-   .flex-banner-item-left {
-@include dark-container-item-left
-
-
-}
 
 
      @media only screen and (min-width: 800px) {
@@ -236,4 +238,3 @@ $white: #ffffff;
    font-size: 30px;
    margin:100px;
  }
- 

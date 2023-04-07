@@ -15,13 +15,46 @@
     <link href="SCSS/navbar.css" rel="stylesheet">
     <link href="SCSS/containers.css" rel="stylesheet">
     <link href="SCSS/main.css" rel="stylesheet">
- 
+    <!-- <link href="SCSS/panelSwipe.css" rel="stylesheet"> -->
     <link href="SCSS/card.css" rel="stylesheet">
-    
+    <link href="SCSS/typing.css" rel="stylesheet">
 
     <script type="text/javascript" src="JS/js/lib/jquery.min.js"></script>
     <script type="text/javascript" src="JS/js/lib/highlight.pack.js"></script>
     <script type="text/javascript" src="JS/js/lib/modernizr.custom.min.js"></script>
+<!-- <script>
+  const duration = 80000;
+
+const scrollToTarget = function (target) {
+    const top = target.getBoundingClientRect().top;
+    const startPos = window.pageYOffset;
+    const diff = top;
+
+    let startTime = null;
+    let requestId;
+
+    const loop = function (currentTime) {
+        if (!startTime) {
+            startTime = currentTime;
+        }
+
+        // Elapsed time in miliseconds
+        const time = currentTime - startTime;
+
+        const percent = Math.min(time / duration, 1);
+        window.scrollTo(0, startPos + diff * percent);
+
+        if (time < duration) {
+            // Continue moving
+            requestId = window.requestAnimationFrame(loop);
+        } else {
+            window.cancelAnimationFrame(requestId);
+        }
+    };
+    requestId = window.requestAnimationFrame(loop);
+};
+</script> -->
+
 
 <style>
 
@@ -112,9 +145,9 @@
             <p>Blossoming Web Developer</p>
            <br>
            <br>
-           <div class="button"> Scroll Down ↓
-           <!-- <img class="home_down" src="assets/Down_Arrow.svg" alt="down"> -->
-          </div>
+           <a href="#featured"><div class="button"> Scroll Down ↓
+      
+          </div></a>
 
        <!-- <img style="width:50%" src="assets/tailor.png"></img>
             <br>
@@ -187,7 +220,7 @@
 
 
       </section>
-      <section class="section1">
+      <section id="featured" class="section1">
         <br>
         <h1 class = "title" data-aos="fade-right"><i class="fa-brands fa-envira" style="color:
 
@@ -221,39 +254,82 @@
       </section>
       
 
+  
+      <!-- <div class ="animation">
+      
+        <img class="blossom-anime"  src ="assets/logo.svg" alt="paper">
+       
+        <img class="blossom-anime" style=" transform:translateX(1000px);" src ="assets/logo.svg" alt="paper">
+       
 
-      <section class ="animation">
-        <img class="blossom-anime" src ="assets/logo.svg" alt="paper">
+        <img class="blossom-anime" style=" transform:translateX(1200px);" src ="assets/logo.svg" alt="paper">
 
-        <img class="blossom-anime1" src ="assets/logo.svg" alt="paper">
-      <!-- <div class="animation1">
-        <h1 class="titlecard">Who is Sorren?</h1> 
-
-      </div> -->
+        <img class="blossom-anime" style=" transform:translateX(1500px);" src ="assets/logo.svg" alt="paper">
+ 
         
       <h1 class="titlecard">Who is Sorren?</h1>
-      </section>
-      <!-- <section class ="animation1">
-        <h1 class="titlecard">Who is Sorren?</h1>
-        </section> -->
+      </div> -->
+ 
      <div>
-
-          <div class="card">Card1
-          
-          
+ 
+       
+            <div class ="animation">
+      
+              <img class="blossom-anime"  src ="assets/logo.svg" alt="paper">
+             
+              <img class="blossom-anime" style=" transform:translateX(1000px);" src ="assets/logo.svg" alt="paper">
+             
+      
+              <img class="blossom-anime" style=" transform:translateX(1200px);" src ="assets/logo.svg" alt="paper">
+      
+              <img class="blossom-anime" style=" transform:translateX(1500px);" src ="assets/logo.svg" alt="paper">
+       
+         
+            <h1 class="titlecard-no-anime">Who is Sorren? </h1>
+            <br>
+            <a href="#1"><div class="button center"> Scroll Down ↓</div></a>
           </div>
-          <div class="card">
+          
+     
+        
+        
+          <div id="1" class="card">
               <img src="https://source.unsplash.com/random/1000x1000" alt="random"/>
              <div class="card-content">
-              Card2 
+            <h1>Hi, I am Sorren.</h1>
+
+            <div class="wrapper">
+              <div class="typing-demo">
+          <code>
+              console.log("I am Sorren");
+                </code>
+          
+              </div>
+          </div>
           </div></div>
-          <div class="card">Card3 </div>
+          <div class="card">
+
+
+          </div>
           <div class="card">Card4 </div>
         </div>
     
         
-   
-     
+        <!-- <div id="pinContainer">
+          <section class="panel one">
+            <b>ONE</b>
+          </section>
+          <section class="panel two">
+            <b>TWO</b>
+          </section>
+          <section class="panel three">
+            <b>THREE</b>
+          </section>
+          <section class="panel four">
+            <b>FOUR</b>
+          </section>
+        </div>
+      -->
        
 
    <div class="section2">
@@ -317,6 +393,8 @@
           <!-- <script type="text/javascript" src="JS/js/tracking.js"></script> -->
    
 
+
+          <script src="JS/typing_observer.js"></script>
         </div>
         <!-- cdn scrollmagic lib -->
         <script src ='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js'></script>
@@ -334,13 +412,17 @@
         <!-- cdn for scroll shape morphing -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js"></script>
       
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script>
+
        <!-- cdn for css -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js" integrity="sha512-Xc+rcY3w0DANwcFGWBcnBf2dw/p5a4IBAKqHdBJScNOnIH+qoQYE6xuWEdW3wiP7Q+XvL9MacrnKkzoP0Kexug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         
            <!-- cdn for shape smooth movement -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js" integrity="sha512-plyexAULVlTExvDn2yUZFJV9F8q+53MC/GpU9dEuNGXmrrI3J8Rcffjvxg3OOBALBvF+UILPLIBEoCeF2maqTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
      
-        <script src="JS/Blossom_Transition.js"></script>
-        <script src="JS/title.js"></script>
+        <script src="JS/Blossom_Transition_responsive.js"></script>
+        <!-- <script src="JS/title.js"></script> -->
+        <!-- <script src="JS/sectionSwipe.js"></script> -->
       </body>
 </html>

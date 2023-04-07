@@ -6,11 +6,11 @@ var tween1 = new TimelineMax()
 const controller1 = new ScrollMagic.Controller();
 
 const scene1= new ScrollMagic.Scene({
-    triggerElement: ".animation1",
+    triggerElement: ".animation",
     duration:3000,
     triggerHook:0
 })
 .setTween(tween1)
 .addIndicators()
-.setPin('.animation1')//forces animation to finish
+.setPin('.animation')//forces animation to finish
 .addTo(controller1);

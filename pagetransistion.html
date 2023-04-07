@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scrolling Transition</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			height: 2000px;
+		}
+
+		section {
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 2rem;
+			color: white;
+			transition: background 1s ease-in-out;
+		}
+
+		#section1 {
+			background: #2196F3;
+		}
+
+		#section2 {
+			background: #4CAF50;
+		}
+
+		#section3 {
+			background: #9C27B0;
+		}
+
+		#section4 {
+			background: #F44336;
+		}
+
+		#section5 {
+			background: #FFC107;
+		}
+	</style>
+</head>
+<body>
+	<section id="section1">
+		<h1>Section 1</h1>
+	</section>
+
+	<section id="section2">
+		<h1>Section 2</h1>
+	</section>
+
+	<section id="section3">
+		<h1>Section 3</h1>
+	</section>
+
+	<section id="section4">
+		<h1>Section 4</h1>
+	</section>
+
+	<section id="section5">
+		<h1>Section 5</h1>
+	</section>
+
+	<script>
+		const sections = document.querySelectorAll("section");
+		const windowHeight = window.innerHeight;
+
+	
+			sections.forEach((section) => {
+				const sectionTop = section.getBoundingClientRect().top;
+				const sectionBottom = section.getBoundingClientRect().bottom;
+
+				if (sectionTop < windowHeight && sectionBottom > 0) {
+					section.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), ${section.style.backgroundImage}`;
+				} else {
+					section.style.backgroundImage = section.style.backgroundImage.replace(/linear-gradient.*?,/g, "");
+				}
+			});
+	
+
+		window.addEventListener("scroll", transitionSections);
+	</script>
+</body>
+</html>
