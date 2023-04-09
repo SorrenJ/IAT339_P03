@@ -87,6 +87,37 @@ display:none;
 
 
 
+
+
+
+.triangleTopLeft-inverse{
+  border-right: 100vh solid transparent;
+  border-top: 39vw solid rgb(0,0,0);
+  margin-left: -10%;
+  position: absolute;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .triangleTopLeft-inverse{
+display:none;
+
+  }
+
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  .triangleTopLeft-inverse{
+display:none;
+
+  }
+
+}
+
+
+
 .card img{
     // position:absolute;
     z-index:1;
@@ -143,7 +174,7 @@ opacity:0;
 
 
 .pink_text_anime{
-color:white;
+color:$brand_pink;
 position:absolute;
 margin-left: 5%;
 margin-top: 20vh;
@@ -193,4 +224,17 @@ h1{
     padding-bottom:80px;
   }
 
+}
+
+
+.bio{
+  color:black;
+}
+.date{
+  font-size:1.2em;
+
+}
+
+.company{
+  font-size:0.7em;
 }

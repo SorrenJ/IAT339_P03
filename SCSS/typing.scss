@@ -31,14 +31,14 @@
 
 
   .typing-demo1{
-    width: 35ch;
+    width: 45ch;
     opacity: 0;
     // animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     // white-space: nowrap;
     overflow: hidden;
     // border-right: 3px solid;
     font-family: monospace;
-     font-size: 1.2em;
+    font-size:0.8em;
     position:absolute;
  margin-top:5%;
     margin-left:15px;
@@ -98,6 +98,7 @@
 
     opacity:1;
     white-space: nowrap;
+
    }
   @keyframes typing1 {
     0% {
@@ -122,18 +123,15 @@ opacity:1;
 
     }
   }
-  @media only screen and (max-width: 1250px) {
-    .active-type1{
 
-    font-size:0.8em;
-    }
-  }
+  
   @media only screen and (max-width: 800px) {
     .active-type1 {
-      margin-left:15%;
-      margin-right:15%;
-      padding-left: 5%;
-      padding-right:5%;
-    font-size:1em;
+      margin-left: -25%;
+      margin-right:5%;
+      padding-left: 0;
+      padding-right:0;
+    font-size:0.6em;
+    white-space: break-spaces;
     }
   }

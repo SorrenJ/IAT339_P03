@@ -19,7 +19,20 @@ html{
   body {
     margin: 0;
   font-family:$myFont;
-  
+  background-image:linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2)), url("../assets/Mountains.png") !important;
+  /* width: 100%; */
+  margin-left: 0;
+  margin-right: 0;
+  background-size: cover;
+  background-color: #ffffffe8;
+  /* background-blend-mode: hard-light; */
+ 
+  background-size: 120% 100em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  animation: mymove 8s alternate infinite;
   /* position:fixed; */
   
   }
@@ -27,14 +40,13 @@ html{
   .triangleTopLeft_main{
     width: 11vw;
     border-top: 100vh solid rgb(0,0,0);
-    border-right: 25vw solid transparent;
+    border-right: 35vw solid transparent;
     margin-left: 95%;
-    /* margin-top: 9px; */
-    margin-top: -616px;
+    margin-top: -100vh;
 
   }
   
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 800px) {
     .triangleTopLeft_main{
   display:none;
   
@@ -59,8 +71,17 @@ html{
         
         }
    
+        .animation_project{
+          height:100vh;
+          /* background-image: linear-gradient(to top, #4500e7 0%, #0a81e2 100%); */
+          position:relative;
+          overflow:hidden;
+          padding-top:400px;
+          }
+
         @mixin blossom-anime{
             // height:100px;
+            
             position: absolute;
             top:200px;
            
@@ -83,6 +104,16 @@ img.blossom-anime{
         
     }
   
+
+    .bloosom-anime2{
+      @include blossom-anime;
+      
+  }
+
+  .bloosom-anime3{
+    @include blossom-anime;
+    
+}
     .titlecard{
       position:absolute;
       z-index:2;
@@ -581,14 +612,41 @@ img.blossom-anime{
       }
     }
   
+
+
+
+// projects css
+
+.projects{
+  margin: 0;
+  font-family:$myFont;
+  // background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgb(0, 0, 0), rgba(0, 0, 0, 0.2)), url("../assets/MountainsNight3.png") !important;
+  
+  background-image:linear-gradient(rgba(0, 0, 0, 0.205), rgb(4, 0, 12), rgba(0, 0, 0, 0.466)), url("../assets/MountainsNightBW.jpg") !important;
+  /* width: 100%; */
+  margin-left: 0;
+  margin-right: 0;
+  background-size: cover;
+  background-color: #ffffffe8;
+  /* background-blend-mode: hard-light; */
+ color:white;
+  background-size: 120% 100em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+background-blend-mode:darken;
+  animation: mymove 8s alternate infinite;
+// z-index:4;
+
+}
     .section2{
-      color:#000000;
+      color:#ffffff;
       margin-left:0;
       margin-right:0;
       }
     
     .section2:hover{
-    color:#ffffff;
+    color:#000000;
   z-index:1;
   
     }
@@ -610,7 +668,7 @@ img.blossom-anime{
     
     .section2:hover .greenbox {
       float: right;
-      background-color: #000000;
+      background-color: #ffffff;
      position:absolute;
       height: 100%;
       width: 100%;
