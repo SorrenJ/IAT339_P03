@@ -23,6 +23,26 @@ html{
   /* position:fixed; */
   
   }
+
+  .triangleTopLeft_main{
+    width: 11vw;
+    border-top: 100vh solid rgb(0,0,0);
+    border-right: 25vw solid transparent;
+    margin-left: 95%;
+    /* margin-top: 9px; */
+    margin-top: -616px;
+
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .triangleTopLeft_main{
+  display:none;
+  
+    }
+  
+  }
+
+
   .animation{
     height:100vh;
     /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
@@ -81,13 +101,15 @@ img.blossom-anime{
 
 
       .titlecard-no-anime{
-        position:absolute;
+        position:relative;
         z-index:2;
         left:0;
         top:0;
         width:100%;
         height:100%;
         font-size:$titleSize_desktop;
+       
+       margin-top:-50vh;
         /* make content center */
         display:flex;
         justify-content:center;
