@@ -64,7 +64,8 @@ html, body{
     overflow:hidden;
     padding-top:400px;
     width:100vw; //updates animation with window resize
-    
+    max-width: 100% !important;
+    overflow-x: hidden !important;
     }
     .animation1{
         height:100vh;
@@ -80,7 +81,9 @@ html, body{
           position:relative;
           overflow:hidden;
           padding-top:400px;
-          width:100vw;
+          width:100vw; //updates animation with window resize
+          max-width: 100% !important;
+          overflow-x: hidden !important;
           }
 
         @mixin blossom-anime{
@@ -117,6 +120,10 @@ img.blossom-anime{
   .bloosom-anime3{
     @include blossom-anime;
     
+}
+
+.blossom-wrapper{
+  width:100vw;
 }
     .titlecard{
       position:absolute;
