@@ -8,7 +8,7 @@ const flightPath2 = {
         {x:300, y:10}, 
 {x: 500, y:100}, {x:750, y:-100, scale: 10},
 {x:350, y:-50},{x:600, y:100},{x:800, y:200},
-{x:window.innerWidth+1000, y:-120}
+{x:window.innerWidth, y:-120}
     ]
 }
 
@@ -20,7 +20,7 @@ const flightPath3 = {
         {x:-10, y:10}, 
 {x: -50, y:100}, {x:-150, y:-100, scale: 10},
 {x:-35, y:-50},{x:14, y:100},{x:10, y:0},
-{x:window.innerWidth+10, y:-250}
+{x:window.innerWidth, y:-250}
     ]
 }
 const tween1  = new TimelineLite();

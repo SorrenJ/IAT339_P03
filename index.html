@@ -60,11 +60,7 @@ const scrollToTarget = function (target) {
 
 
   <style>
-html{
-  scroll-behavior: smooth;
-  max-width: 100%;
-  overflow-x: hidden;
-}
+
   </style>
 
 
@@ -283,31 +279,38 @@ html{
       <img class="blossom-anime" style=" transform:translateX(1500px); opacity:0.2" src="assets/logo.svg" alt="paper">
 
 
-      <h1 class="titlecard-no-anime">Who is Sorren? </h1>
-      <!-- <br> -->
+      <h1 class="titlecard">Who is Sorren? </h1>
+      <br><br><br>
       <a href="#1">
         <div class="button center"> Scroll Down ↓</div>
       </a>
     </div>
 
     <!-- start of card deck -->
-    <div>
+<div>
       <!-- 1st card -->
-      <div id="1" class="card">
-        <div class="card-container">
-          <div class="card-container-item-left">
-
-            <h1>Hello there,</h1><br>
-            <h1>I am Sorren.</h1>
+    <div id="1" class="card">
+       <!-- start of card container-->
+      <div class="card-container-inverse-2">
+        <!-- start of 1st item -->
+        <div class="card-container-item-left-inverse-2">
+            <br>
+          <h1 class="titlecard-no-anime">I am Sorren</h1>
 <br>
-            <a href="#2"><div class="button">Next ↓</div></a>
-            <div class="triangleTopLeft"></div>
+            <a href="#2"><div class="button next">Next ↓</div></a>
+            <br>
           </div>
-          <div class="card-container-item-right">
-            <img class="portrait" src="assets/Sorren_trans_bw.png">
+ <!-- end of 1st item -->
+          <div class="triangleTopLeft-inverse"></div>
+<!-- start of 2nd item -->
+          <div class="card-container-item-right-inverse-2">
+            <img class="portrait" src="assets/Sorren_trans_bw.png" alt="Sorren">
+       
           </div>
-        </div>
+          <!-- end of 2nd item -->
       </div>
+       <!-- end of card container-->
+    </div>
       <!-- end of 1st card -->
 
       <!-- 2nd card -->
@@ -338,11 +341,11 @@ html{
             <p>I enjoy manually coding</p>
             <p>HTML pages with CSS animations from scratch with added javaScript for website interactions.</p>
             <br>
-            <br>
+          
 
             <div class="skill_container">
               <h1>Strengths</h1>
-              <br>
+          <br>
               <div class="tag">CSS/SASS</div>
               <div class="tag"> HTML</div>
               <div class="tag"> Joomla!</div>
@@ -351,9 +354,9 @@ html{
               <div class="tag">Figma</div>
               <div class="tag">Illustrator</div>
               <div class="tag">Photoshop</div>
-              <br><br>
-              <h1>Learning</h1>
               <br>
+              <h1>Learning</h1>
+         <br>
               <div class="tag"> PHP</div>
               <div class="tag"> JavaScript</div>
               <div class="tag"> JQuery</div>
@@ -419,6 +422,9 @@ html{
               <p class="company">Career & Volunteer Services, Simon Fraser University (SFU)</p>
               <br>
               </p>
+            <br>
+            <br>
+            <br>
             </div>
        
           </div>
@@ -431,7 +437,7 @@ html{
          <div id="4" class="card">
           <div class="card-container-inverse">
             <div class="card-container-item-left-inverse tree">
-              
+              <p>Keep scrolling to grow plant. ↓</p>
               <div class="animation_tree">
                 <svg viewBox="0 0 1051 966" fill="none" xmlns="http://www.w3.org/2000/svg">
        
@@ -455,6 +461,7 @@ html{
             </div>
   
             <div class="card-container-item-right-inverse">
+              <br>
               <p>Like a tree, my goal is to grow and learn new things.</p>
               <br>
               <p>I am driven to develop projects that can contribute to society in a positive way, whether it is by improving accessibility, user experience, functionality, or to simply make people smile.</p>

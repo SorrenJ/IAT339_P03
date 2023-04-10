@@ -125,6 +125,7 @@ img.blossom-anime{
       top:0;
       width:100%;
       height:100%;
+
       font-size:$titleSize_desktop;
       /* make content center */
       display:flex;
@@ -141,10 +142,10 @@ img.blossom-anime{
         left:0;
         top:0;
         width:100%;
-        height:100%;
+        // height:100%;
         font-size:$titleSize_desktop;
        
-       margin-top:-50vh;
+  //  margin-top:-50vh;
         /* make content center */
         display:flex;
         justify-content:center;
@@ -154,6 +155,7 @@ img.blossom-anime{
       @media only screen and (max-width: 900px) {
         .titlecard{
           font-size:$titleSize_mobile;
+          margin-top:-25vh;
         }
         .titlecard-no-anime{
           font-size:$titleSize_mobile;
