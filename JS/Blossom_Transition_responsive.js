@@ -25,18 +25,9 @@ const flightPath1 = {
 }
 const tween  = new TimelineLite();
 
-if ($(window).width() < 800){
-tween.add(
-    TweenLite.to('.blossom-anime1',1, {
-        bezier: flightPath1,
-        ease: Power1.easeInOut
-    })
+if ($(window).width() > 800){
 
 
-    );
-
-    console.log("mobile");
-}
 tween.add(
     TweenLite.to('.blossom-anime',1, {
         bezier: flightPath,
@@ -46,7 +37,7 @@ tween.add(
     
     );
     // console.log("desktop");             
-        
+  
 const controller = new ScrollMagic.Controller();
 
 const scene = new ScrollMagic.Scene({
@@ -59,3 +50,5 @@ const scene = new ScrollMagic.Scene({
 // .addIndicators()
 .setPin('.animation')//forces animation to finish
 .addTo(controller);
+
+}    

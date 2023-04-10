@@ -25,18 +25,9 @@ const flightPath3 = {
 }
 const tween1  = new TimelineLite();
 
-if ($(window).width() < 800){
-tween1.add(
-    TweenLite.to('.blossom-anime3',1, {
-        bezier: flightPath2,
-        ease: Power1.easeInOut
-    })
+if ($(window).width() > 800){
 
 
-    );
-
-    console.log("mobile");
-}
 tween1.add(
     TweenLite.to('.blossom-anime2',1, {
         bezier: flightPath2,
@@ -60,4 +51,4 @@ const scene1 = new ScrollMagic.Scene({
 .setPin('.animation_project')//forces animation to finish
 .addTo(controller1);
 
-
+}
