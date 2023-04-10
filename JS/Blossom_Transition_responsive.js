@@ -56,6 +56,6 @@ const scene = new ScrollMagic.Scene({
 })
 .setTween(tween)
 
-.addIndicators()
+// .addIndicators()
 .setPin('.animation')//forces animation to finish
 .addTo(controller);

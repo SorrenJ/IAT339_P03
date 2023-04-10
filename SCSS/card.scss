@@ -34,7 +34,7 @@ $white: #ffffff;
   border-top: 40vw  solid rgb(0, 0, 0);
   border-right: 39vh solid transparent;
   float:right;
-  margin-top:-320px;
+  margin-top: -507px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -148,7 +148,7 @@ align-items:center;
 position:absolute;
   width: 30%;
   height: auto;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left: 65%;
   margin-bottom:-15%;
 }
@@ -190,6 +190,7 @@ margin-top: 20vh;
     font-size:1em;
     padding-bottom: 5%;
     width:85%;
+    margin-top: 5%;
   }
 }
 
@@ -238,3 +239,20 @@ h1{
 .company{
   font-size:0.7em;
 }
+
+.animation_tree{
+  transform-origin: center 100%;
+      }
+    
+
+      // .animation_tree:after{
+      //   position: absolute;
+      //   top: 100%;
+      //   left: 0;
+      //   width: 5px;
+      //   height: 5px;
+      //   content: '';
+      //   background-color: rgb(255, 0, 0);
+      //   border-radius: 50%;
+      //       }
+          

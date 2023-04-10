@@ -39,7 +39,7 @@ tween1.add(
 }
 tween1.add(
     TweenLite.to('.blossom-anime2',1, {
-        bezier: flightPath3,
+        bezier: flightPath2,
         ease: Power1.easeInOut
     })
 
@@ -56,6 +56,8 @@ const scene1 = new ScrollMagic.Scene({
 })
 .setTween(tween1)
 
-.addIndicators()
+// .addIndicators()
 .setPin('.animation_project')//forces animation to finish
 .addTo(controller1);
+
+

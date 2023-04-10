@@ -366,12 +366,11 @@ color:black;
     font-size: 30px;;
     // margin-top: 5%;
   font-size:1.5em;
-  padding-top:5%;
+  padding-top:2%;
 z-index:4;
 
   background-color: #000000; 
-
-
+  // align-items: right;
  
   }
   
@@ -385,13 +384,13 @@ z-index:4;
   .card-container-item-left-inverse{
       width: 100%;
       font-size: 25px;
-      height:50%;
+      height:25%;
       text-align:center;
       margin-left: auto;
       margin-right:auto;
       border-top: dashed black;
       
-      padding-top: 15vh;
+      padding-top: 10vh;
       padding-bottom: 5vh;
       background-color: white; 
     }
@@ -400,17 +399,20 @@ z-index:4;
 
     width:100%;
     text-align: center;
-     margin-top: -5vh;
+     margin-top: -5px;
      margin-left:0;
      background-color: #000000; 
      color:rgb(255, 255, 255);
-     padding-top: 5%;
+     padding-top: 15%;
      padding-left:5%;
      padding-right:5%;
 font-size:1em;
 margin-bottom:5px;
     }
     
+    .tree{
+      height:50%;
+    }
     
     }
   
@@ -423,7 +425,7 @@ margin-bottom:5px;
     flex-direction:row;
     color:white; 
     background-color: black;
-    width:100%;
+    width:100vw;
 
   }
   
@@ -482,8 +484,8 @@ margin-bottom:5px;
       text-align:center;
       margin-left: auto;
       margin-right:auto;
-
-      padding-top: 15vh;
+      border-top: dashed white;
+      padding-top: 5vh;
       padding-bottom: 5vh;
       background-color: black; 
     }
@@ -505,4 +507,5 @@ margin-bottom:5px;
     
     
     }
+
   

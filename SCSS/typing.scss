@@ -13,7 +13,7 @@
   }
   
   .typing-demo {
-    width: 20ch;
+    width: 22ch;
     opacity: 0;
     // animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     // white-space: nowrap;
@@ -88,7 +88,7 @@
       margin-right:15%;
       padding-left: 5%;
       padding-right:5%;
-    font-size:1em;
+    font-size:0.5em;
     }
   }
 
@@ -127,11 +127,12 @@ opacity:1;
   
   @media only screen and (max-width: 800px) {
     .active-type1 {
-      margin-left: -25%;
+      margin-left: 0;
       margin-right:5%;
       padding-left: 0;
       padding-right:0;
-    font-size:0.6em;
-    white-space: break-spaces;
+    font-size:0.4em;
+    // margin-top:-2%;
+    // white-space: break-spaces;
     }
   }
