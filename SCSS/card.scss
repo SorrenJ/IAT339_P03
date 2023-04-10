@@ -242,8 +242,12 @@ h1{
 
 .animation_tree{
   transform-origin: center 100%;
+  width:100%;
       }
     
+      .tree_wrapper{
+        width:100vw;
+      }
 
       // .animation_tree:after{
       //   position: absolute;

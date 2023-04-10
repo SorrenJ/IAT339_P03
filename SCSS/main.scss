@@ -6,10 +6,10 @@ $brand_pink: #DF62BC;
 $black: #000000;
 $white: #ffffff;
 
-html{
+html, body{
   scroll-behavior: smooth;
-  max-width: 100%;
-  overflow-x: hidden;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 
 * {
