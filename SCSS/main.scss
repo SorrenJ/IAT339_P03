@@ -8,8 +8,8 @@ $white: #ffffff;
 
 html, body{
   scroll-behavior: smooth;
-  max-width: 100% !important;
-  overflow-x: hidden !important;
+  // max-width: 100% !important;
+  // overflow-x: hidden !important;
 }
 
 * {
@@ -744,18 +744,16 @@ background-blend-mode:darken;
          }
        }
    
+       
+       @media only screen and (min-width: 900px) {
        .flex-container:hover .proj-img-container{
          transform:scale(1.2);
          transition: 0.5s;
           }
          
-          @media only screen and (max-width: 900px) {
+       
   
-            .flex-container:hover .proj-img-container{
-              transform:scale(1);
-              transition: 0.5s;
-               }
-              
+        
           }
        @media only screen and (max-width: 900px) {
          .flex-container {
