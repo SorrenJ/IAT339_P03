@@ -32,7 +32,7 @@
   <!-- font awesome icons -->
   <script src="https://kit.fontawesome.com/0b0401bad6.js" crossorigin="anonymous"></script>
 
-  <script src="JS/grow_app_tree.js"async></script>
+
 </head>
 
 <body>
@@ -224,25 +224,32 @@
 
 
 
-
+<!-- start of animation -->
     <div id="about" class="animation">
-<div class="blossom-wrapper">
-      <img class="blossom-anime" src="assets/logo.svg" alt="paper">
-
-      <img class="blossom-anime" style=" transform:translateX(1000px); opacity:0.8" src="assets/logo.svg" alt="paper">
-
-
-      <img class="blossom-anime" style=" transform:translateX(1200px); opacity:0.5" src="assets/logo.svg" alt="paper">
-
-      <img class="blossom-anime" style=" transform:translateX(1500px); opacity:0.2" src="assets/logo.svg" alt="paper">
-
-</div>
-      <h1 class="titlecard">Who is Sorren? </h1>
+      <div class="blossom-wrapper">
+        <img class="blossom-anime" src="assets/logo.svg" alt="paper">
+  
+        <img class="blossom-anime" style=" transform:translateX(1000px); opacity:0.8" src="assets/logo.svg" alt="paper">
+  
+  
+        <img class="blossom-anime" style=" transform:translateX(1200px); opacity:0.5" src="assets/logo.svg" alt="paper">
+  
+        <img class="blossom-anime" style=" transform:translateX(1500px); opacity:0.2" src="assets/logo.svg" alt="paper">
+  
+  </div>
+  <div class="titlecard">
+      <h1 >Who is Sorren? </h1>
       <br>
       <a href="#1">
         <div class="button center"> Scroll Down ↓</div>
       </a>
+   
+  
     </div>
+    
+
+  </div>
+  <!-- end of animation -->
 
     <!-- start of card deck -->
 <div>
@@ -254,13 +261,13 @@
         <div class="card-container-item-left-inverse-2">
             <br>
           <h1 class="titlecard-no-anime">I am Sorren</h1>
-<br>
+            <br>
             <!-- <a href="#2"><div class="button next">Next ↓</div></a> -->
             <br>
           </div>
- <!-- end of 1st item -->
+          <!-- end of 1st item -->
           <div class="triangleTopLeft-inverse"></div>
-<!-- start of 2nd item -->
+          <!-- start of 2nd item -->
           <div class="card-container-item-right-inverse-2">
             <img class="portrait" src="assets/Sorren_trans_bw.png" alt="Sorren">
        
@@ -344,7 +351,7 @@
               organizations.</p>
             <br>
             <a href="files/IAT339_Resume.pdf" target="_blank" download="proposed_file_name">
-              <div class="button next"><i class="fa fa-download"></i> Download Resume</div></a>
+              <div class="button next download "><i class="fa fa-download"></i> Download Resume</div></a>
               <br><br>    
             <!-- <a href="#4"><div class="button next">Next ↓</div></a> -->
           </div>
@@ -380,18 +387,18 @@
               <p class="company">Career & Volunteer Services, Simon Fraser University (SFU)</p>
               <br>
               </p>
-            <br>
-            <br>
-            <br>
+              <br>
+              <br>
+              <br>
             </div>
        
           </div>
         </div>
       </div>
-    <!-- end of card 3 -->
+        <!-- end of card 3 -->
 
          <!--4th card -->
-         <div class="tree_start ">
+        <div class="tree_start ">
          <div id="4" class="card">
           <div class="card-container-inverse">
             <div class="card-container-item-left-inverse tree">
@@ -417,6 +424,7 @@
 
 
             </div>
+         
   
             <div class="card-container-item-right-inverse">
               <br>
@@ -432,36 +440,36 @@
           </div>
         </div>
           <!-- end of card 4 -->
-        </div>
+      
+      
+      
+      
+      
+      </div>
     </div>
+  </div>
 <!-- end of card deck -->
 
 
 
-<div id="project" class="animation_project projects">
+<div id="project" class="animation_project">
     <div class="blossom-wrapper">
-<br>
-<br>
-      <h1 class="titlecard-no-anime">Projects </h1>
       <div class="blossom-wrapper">
       <img class="blossom-anime2" src="assets/logo.svg" alt="paper">
-
       <img class="blossom-anime2" style=" transform:translateX(1000px); opacity:0.8; z-index:4" src="assets/logo.svg" alt="paper">
-
-
       <img class="blossom-anime2" style=" transform:translateX(1200px); opacity:0.5" src="assets/logo.svg" alt="paper">
-
       <img class="blossom-anime2" style=" transform:translateX(1500px); opacity:0.2" src="assets/logo.svg" alt="paper">
     </div>
 
- 
-      <!-- <br> -->
+    <div class="titlecard">
+      <h1 >Projects </h1>
+      <br>
       <a href="#project1">
         <div class="button center"> Scroll Down ↓</div>
       </a>
-    </div>
-
-
+    </div>   
+</div>
+</div>
 
 
 
@@ -494,7 +502,7 @@
 
 
 
-    </div>
+
 
     <br>
 
@@ -521,8 +529,8 @@
       </div>
     </div>
 
+</div>
 
- <div>
 
   <!-- 2nd card -->
   <div id="contact" class="start card">
@@ -597,7 +605,7 @@
 
 
 
-</div>
+
 
 
 
@@ -610,15 +618,9 @@
 
 
 
-  <script src="JS/typing_observer.js"></script>
-  <script src="JS/typing_observer2.js"></script>
-  <script src="JS/element_fadein.js"></script>
 
-  </div>
-
- 
-  <script src="JS/Blossom_Transition_responsive.js"defer></script>
-  <script src="JS/Blossom_Transition_responsive_project.js"defer></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script> -->
 
 
  <!-- cdn scrollmagic lib -->
@@ -652,7 +654,16 @@
 
 
 
-
+   <script src="JS/typing_observer.js"></script>
+   <script src="JS/typing_observer2.js"></script>
+   <script src="JS/element_fadein.js"></script>
+ 
+ 
+ 
+  
+   <script src="JS/Blossom_Transition_responsive.js"></script>
+   <script src="JS/grow_app_tree.js"></script>
+   <script src="JS/Blossom_Transition_responsive_project.js"></script>
 
 
 

@@ -1,6 +1,6 @@
 $myFont: Verdana, Geneva, Tahoma, sans-serif;
 $titleSize_desktop: 4em;
-$titleSize_mobile: 2em;
+$titleSize_mobile: 2.5em;
 
 $brand_pink: #DF62BC;
 $black: #000000;
@@ -61,12 +61,22 @@ html, body{
     height:100vh;
     /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
     position:relative;
-    overflow:hidden;
-    padding-top:400px;
+    // overflow:hidden;
+    // padding-top:400px;
     width:100vw; //updates animation with window resize
     max-width: 100% !important;
     overflow-x: hidden !important;
     }
+
+    @media only screen and (max-width: 800px) {
+      .animation{
+        height:100vh;
+        padding-top:150px;
+      }
+
+
+    }
+
     .animation1{
         height:100vh;
         /* background-image: linear-gradient(to top, #4500e7 0%, #0a81e2 100%); */
@@ -79,13 +89,21 @@ html, body{
           height:100vh;
           /* background-image: linear-gradient(to top, #4500e7 0%, #0a81e2 100%); */
           position:relative;
-          overflow:hidden;
+          // overflow:hidden;
           padding-top:400px;
           width:100vw; //updates animation with window resize
           max-width: 100% !important;
           overflow-x: hidden !important;
           }
 
+          @media only screen and (max-width: 800px) {
+            .animation_project{
+              height:100vh;
+              padding-top:150px;
+            }
+      
+      
+          }
         @mixin blossom-anime{
             // height:100px;
             
@@ -123,22 +141,25 @@ img.blossom-anime{
 }
 
 .blossom-wrapper{
+ margin-top:25vh;
   width:100vw;
+
 }
     .titlecard{
       position:absolute;
       z-index:2;
-      left:0;
-      top:0;
+      // left:0;
+     top:25%;
       width:100%;
-      height:100%;
-
-      font-size:$titleSize_desktop;
+      // height:100%;
+// margin-bottom:100px;
+      font-size:1.5em;
       /* make content center */
-      display:flex;
+      display:column;
       justify-content:center;
       align-items:center;
-      
+      text-align:center;
+ 
       }
   
 
@@ -161,8 +182,7 @@ img.blossom-anime{
         }
       @media only screen and (max-width: 900px) {
         .titlecard{
-          font-size:$titleSize_mobile;
-          margin-top:-25vh;
+      
         }
         .titlecard-no-anime{
           font-size:$titleSize_mobile;
@@ -577,8 +597,8 @@ img.blossom-anime{
     }
   
     .button.center {
-      padding-left: 2px;
-    padding-right: 2px;
+      padding-left: 12px;
+    padding-right: 12px;
     padding-top: 15px;
     padding-bottom: 15px;
       text-align: center;
@@ -594,7 +614,12 @@ img.blossom-anime{
   // margin-top:80px;
   width:100%;
 }
-
+.button.next.download{
+ margin-top:15px;
+  width:100%;
+  // position:absolute;
+  margin-bottom:5px;
+}
     .featured .button{
   margin-left:15%;
   
@@ -665,6 +690,7 @@ background-blend-mode:darken;
       color:#ffffff;
       margin-left:0;
       margin-right:0;
+      background:#000000;
       }
     
     .section2:hover{
@@ -755,6 +781,28 @@ background-blend-mode:darken;
   
         
           }
+
+          @media only screen and (max-width: 900px) {
+          .flex-container .proj-img-container{
+        padding-left:15px;
+        padding-right:15px;
+          }
+        
+          .flex-container h1{
+            padding-left:15px;
+            padding-right:15px;
+            font-size:1.5em;
+          
+              }
+              .flex-container p{
+                margin-top:5px;
+                padding-left:15px;
+                padding-right:15px;
+                font-size:0.7em;
+                margin-bottom:5px;
+                  }
+        
+        }
        @media only screen and (max-width: 900px) {
          .flex-container {
          flex-wrap: wrap;
