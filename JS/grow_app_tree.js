@@ -1,6 +1,6 @@
 
 
-// if ($(window).width() > 800){
+ if ($(window).width() > 800){
     var tween_tree = new TimelineMax()
     .from(".animation_tree", 1, { scaleY: 0.25, scaleX: 1, opacity: 1})
     .to(".animation_tree", 1, {scaleY: 2,  scaleX: 1, opacity: 1})
@@ -20,4 +20,4 @@ const scene_tree= new ScrollMagic.Scene({
 // .addIndicators()
 .setPin('.tree_start')//forces animation to finish
 .addTo(controller_tree);
-// }
+ }
