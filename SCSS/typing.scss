@@ -24,11 +24,16 @@
     position:absolute;
 
     margin-left:15px;
-
+ 
 
   }
 
-
+  @media only screen and (max-width: 800px) {
+    .typing-demo {
+      display:none;
+    }
+  }
+  
 
   .typing-demo1{
     width: 45ch;
@@ -43,10 +48,15 @@
  margin-top:5%;
     margin-left:15px;
 
+
+  }
+  @media only screen and (max-width: 800px) {
+    .typing-demo1 {
+      display:none;
+    }
   }
   
 
-  
 
   .active-type{
   
@@ -89,7 +99,8 @@
       padding-left: 5%;
       padding-right:5%;
     font-size:0.5em;
-    }
+   
+  }
   }
 
   .active-type1{
@@ -134,5 +145,7 @@ opacity:1;
     font-size:0.4em;
     // margin-top:-2%;
     // white-space: break-spaces;
-    }
+  
+  
+  }
   }
