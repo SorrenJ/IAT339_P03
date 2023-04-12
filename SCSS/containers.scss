@@ -112,7 +112,7 @@ font-size:2.5em;
 
       .flex-banner-item-left {
         animation: slidein 2s ease-in;
-        /* transition:  opacity 1.5s; */
+      // transition:  opacity 1.5s;
       }
 
      }
@@ -323,13 +323,14 @@ color:black;
   
   }
 
+  // 2nd 4th contact slide
 
   .card-container-inverse{
     display: flex;
     justify-content: center;
     // background-color: #ffffff; 
     flex-direction:row;
-    color:white; 
+    // color:white; 
     background-color: white;
     width:100%;
     position:relative;
@@ -349,14 +350,14 @@ color:black;
     margin-bottom: 5%;
     padding-left: 1%;
     padding-right: 15%;
-    padding-top: 33vh;
-
+    padding-top: 143px;
     // margin-top:50px;
   
     // background-color: black;
   }
   
-  
+
+
   .card-container-item-right-inverse{
   padding-left:5%;
   padding-right:5%;
@@ -367,13 +368,14 @@ color:black;
     font-size: 30px;;
     // margin-top: 5%;
   font-size:1.5em;
-  padding-top:2%;
+  padding-top:5%;
 z-index:4;
 height:100vh;
   background-color: #000000; 
   // align-items: right;
- 
+ color:#ffffff;
   }
+
   
   @media only screen and (max-width: 1000px) {
     /* project container */
@@ -386,7 +388,7 @@ height:100vh;
     order:1;
     width:100%;
     text-align: center;
-     margin-top: -5vh;
+  margin-top: 224px;
      margin-left:0;
      background-color: #ffffff; 
      color:rgb(255, 255, 255);
@@ -395,7 +397,9 @@ height:100vh;
      padding-right:5%;
 font-size:1em;
 margin-bottom:5px;
+
 // height:25vh;
+display:none;
     }
     
   .card-container-item-right-inverse{
@@ -413,13 +417,25 @@ order:0;
      font-size: 1.2em;
 margin-bottom:5px;
     }
-    
+    .contact_box{
+      order:-2 !important;
+      color:#000000 !important;
+      display:block !important;
+    }
     .tree{
       height:50%;
     }
     
     }
   
+    .further_links{
+      width:100%;
+    padding-top:15%;
+
+      .button{
+        width:100%;
+      }
+    }
 
     
   .card-container-inverse-2{
@@ -492,6 +508,7 @@ margin-bottom:5px;
       text-align:center;
       margin-left: auto;
       margin-right:auto;
+      position:relative;
       // border-top: dashed white;
       padding-top: 5vh;
       padding-bottom: 5vh;

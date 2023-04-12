@@ -8,8 +8,8 @@ $white: #ffffff;
 
 html, body{
   scroll-behavior: smooth;
-  // max-width: 100% !important;
-  // overflow-x: hidden !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 
 * {
@@ -39,6 +39,10 @@ html, body{
   
   }
 
+  .center_text{
+    text-align: center;
+  }
+
   .triangleTopLeft_main{
     width: 11vw;
     border-top: 100vh solid rgb(0,0,0);
@@ -60,7 +64,7 @@ html, body{
   .animation{
     // height:100vh;
     /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
-    position:relative;
+    // position:relative;
     overflow:hidden;
     // padding-top:400px;
     width:100vw; //updates animation with window resize
@@ -109,7 +113,7 @@ html, body{
             
             position: absolute;
             top:200px;
-           
+           z-index:5;
         }
    
    
@@ -489,9 +493,10 @@ position: absolute;
   
   section{
       height: 100vh; 
-      opacity:0;
+      opacity:1;
       /* color:rgb(255, 255, 255); */
-      color:rgb(0, 0, 0);
+      
+     transform:translateX(-500px);
   }
   
   .inverse{
@@ -503,11 +508,29 @@ position: absolute;
   
   .fadein{
     /* background-color: black; */
+
+ transform:translateX(0px);
+ transition: transform 2s;
    
-    transition:  opacity 1.5s;
-    opacity: 1.5;
   }
+
+
   
+  @media only screen and (max-width: 1000px) {
+    section{
+      transform:translateX(0px);
+   
+    }
+  
+    .fadein{
+      /* background-color: black; */
+   animation: movein 2s;
+   transform:translateX(0px);
+   transition: transform 0s;
+     
+    }
+  
+  }
   
   /* Sections */
 .section {
@@ -770,7 +793,8 @@ background-blend-mode:darken;
          }
        }
    
-       
+   
+
        @media only screen and (min-width: 900px) {
        .flex-container:hover .proj-img-container{
          transform:scale(1.2);
@@ -798,7 +822,7 @@ background-blend-mode:darken;
                 margin-top:5px;
                 padding-left:15px;
                 padding-right:15px;
-                font-size:0.7em;
+                font-size:0.5em;
                 margin-bottom:5px;
                   }
         
@@ -852,20 +876,7 @@ background-blend-mode:darken;
       }
      
 
-      .contact{
-        /* very dark green */
-          /* background-color: #254b152c; */
-          /* width:100vw; */
-        /* padding-left:25px; */
-        position:relative;
-        /* height:100vh; */
-        /* height:100vh; */
-        color:white;
-        // background-color: #1c361054;
-        padding-top:5px;
-        
-        }
-
+ 
         .formContainer{
           margin: auto;
            width: 100%;
@@ -889,18 +900,26 @@ background-blend-mode:darken;
         
           }
         }
-  .contact_box{
-    order:-2;
-  }
-.contact_heading h1{
-font-size:3em;
+
+
+
+
+
+  .banner_heading h1{
+font-size:3.5em;
 display:none;
-color:black;
-margin-top:75px;
+// color:black;
+margin-top:-55px;
+position:relative;
 
 }
-@media only screen and (max-width: 768px) {
-  .contact_heading h1{
+
+
+.inverse_heading{
+  color:white;
+}
+@media only screen and (max-width: 1000px) {
+  .banner_heading h1{
        display:block;
     
     

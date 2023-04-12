@@ -95,6 +95,7 @@ display:none;
   border-top: 39vw solid rgb(0,0,0);
   margin-left: -10%;
   position: absolute;
+  z-index:2;
 }
 
 
@@ -118,16 +119,16 @@ display:none;
 
 
 
-.card img{
-    // position:absolute;
-    z-index:1;
-    left:0;
-    top:0;
-    // width:100%;
-    // height:100%;
-    object-fit:cover;
-    filter:brightness(0.5);
-}
+// .card img{
+//     // position:absolute;
+//     z-index:1;
+//     left:0;
+//     top:0;
+//     // width:100%;
+//     // height:100%;
+//     object-fit:cover;
+//     filter:brightness(0.5);
+// }
 
 .card-content{
 position:absolute;
@@ -148,9 +149,11 @@ align-items:center;
   position:relative;
   background-size: cover;
   object-fit: cover;
-  width:100%;
-  height: 100vh;
- padding-bottom: 5px;
+  width:1000px;
+  height: 110vh;
+  padding-bottom: 5px;
+ filter:brightness(0.5);
+ z-index:0;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -174,7 +177,21 @@ opacity:0;
 
 }
 
-
+.about_heading h1{
+  font-size:3em;
+  display:none;
+  color:black;
+  margin-top:75px;
+  
+  }
+  @media only screen and (max-width: 768px) {
+    .about_heading h1{
+         display:block;
+      
+      
+      }
+  
+  }
 
 .pink_text_anime{
 color:$brand_pink;

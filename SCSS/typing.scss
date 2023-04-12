@@ -11,6 +11,13 @@
     margin-top:-50px;
    
   }
+
+  .wrapper-h1-banner{
+    margin-left:0;
+    margin-top:5vh;
+   
+  }
+  
   
   .typing-demo {
     width: 22ch;
@@ -20,7 +27,7 @@
     overflow: hidden;
     // border-right: 3px solid;
     font-family: monospace;
-     font-size: 2em;
+    
     position:absolute;
 
     margin-left:15px;
@@ -28,7 +35,22 @@
 
   }
 
-  @media only screen and (max-width: 800px) {
+  .type_large_size{
+    font-size: 3.2em;
+   line-height:5em;
+    vertical-align:middle;
+    // color:white;
+  }
+
+  .type_medium_size{
+    font-size: 2em;
+  }
+
+  .type_small_size{
+    font-size: 0.8em;
+  }
+
+  @media only screen and (max-width: 1000px) {
     .typing-demo {
       display:none;
     }
@@ -43,14 +65,14 @@
     overflow: hidden;
     // border-right: 3px solid;
     font-family: monospace;
-    font-size:0.8em;
+ 
     position:absolute;
  margin-top:5%;
     margin-left:15px;
 
 
   }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1000px) {
     .typing-demo1 {
       display:none;
     }
