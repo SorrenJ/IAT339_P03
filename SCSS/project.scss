@@ -97,7 +97,8 @@ section h1 {
         font-size:0.9em;
         line-height: 1.6em;
     }
-    
+
+
 .project_banner{
     background:#000;
     color:white;
@@ -151,7 +152,10 @@ section h1 {
     
     }
 
-
+    code{
+        word-break: break-all;
+    }
+    
 
       
     }
@@ -193,9 +197,9 @@ section h1 {
     }
   
     .button:hover{
-      background-color: #ffffff;
-      color: rgb(0, 0, 0);
-      border-color:#000000;
+      background-color: #ffffff !important;
+      color: rgb(0, 0, 0) !important;
+      border-color:#000000 !important;
       transition:0.5s;
     }
   
@@ -872,7 +876,7 @@ section h1 {
       text-decoration: none;
 top:5%;
 margin-top:5%;
-z-index:2;
+z-index:1;
      
     }
     

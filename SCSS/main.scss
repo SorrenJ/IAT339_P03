@@ -113,19 +113,20 @@ html, body{
             
             position: absolute;
             top:200px;
-           z-index:5;
+         
         }
    
    
         .bloosom-anime{
     @include blossom-anime;
-   
+    z-index:2;
       
         /* margin-left:-150px */
     }
 
 img.blossom-anime{
   width:5%;
+  z-index:2 !important;
 }
 
     .bloosom-anime1{
@@ -793,7 +794,12 @@ background-blend-mode:darken;
          }
        }
    
-   
+     .flex-container .button:hover{
+      background:white !important;
+      color:black !important;
+      border-color: #000000 !important;;
+      transition:1s;
+     }
 
        @media only screen and (min-width: 900px) {
        .flex-container:hover .proj-img-container{

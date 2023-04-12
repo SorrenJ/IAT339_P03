@@ -6,7 +6,7 @@ const flightPath = {
     values: [
         {x: 100, y: -20},
         {x:300, y:10}, 
-{x: 500, y:100}, {x:750, y:-100, scale: 10},
+{x: 500, y:100}, {x:750, y:-100},
 {x:350, y:-50},{x:600, y:100},{x:800, y:200},
 {x:window.innerWidth, y:-120}
     ]
