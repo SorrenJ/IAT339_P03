@@ -9,7 +9,7 @@
 
   <link rel="icon" href="assets/logo.svg" sizes=96x96 />
   <link href="SCSS/navbar.css" rel="stylesheet">
-
+  <link href="SCSS/togglemenu.css" rel="stylesheet">
   <link href="SCSS/inputform.css" rel="stylesheet">
   <link href="SCSS/containers.css" rel="stylesheet">
   <link href="SCSS/project.css" rel="stylesheet">
@@ -76,12 +76,45 @@
         <div class="button style-nav-item">Font</div>
       </a>
     </div>
+
+  <!-- pop up message button -->
+  <button type="button" class="openReply" onclick="toggle_button()"><i class="fa-solid fa-bars"></i></button>
+
+  <!-- pop up content -->
+  <div class="chat-popup" id="myForm">
+
+    <div class="livechat">
+      <button class="button closetoggle" type="button" onclick="toggle_button()">Close</button>
+    </div>
+
+    <div class="inner">
+      <a href="index.html#project">
+        <div class="button style-nav-item" style="background-color:#DF62BC;">← Back to projects</div>
+      </a>
+      <a href="#1">
+        <div class="button style-nav-item">Old Portfolio</div>
+      </a>
+      <a href="#2">
+        <div class="button style-nav-item">Coding References</div>
+      </a>
+      <a href="#3">
+        <div class="button style-nav-item">Images</div>
+      </a>
+      <a href="#4">
+        <div class="button style-nav-item">Font</div>
+      </a>
+    </div>
+
+  </div>
+  <!-- end of pop up content -->
+
+    
     <section class="content" id="1">
       <h2>
         Old Portfolio
       </h2>
       <hr>
-      <p>Portfolio content was repurposed from: <a href="https://sorrenj.github.io/">https://sorrenj.github.io/</a></p>
+      <p>Portfolio content was repurposed from: <a href="https://sorrenj.github.io/" target="_blank">https://sorrenj.github.io/</a></p>
     </section>
     <br>
     <section class="content" id="2">
@@ -91,37 +124,38 @@
       <p>For scrolling animations with GSAP (i.e. blossom transition and growing plant animation)</p>
       <ul>
 
-        <li><a href="https://scrollmagic.io/">https://scrollmagic.io/</a></li>
+        <li><a href="https://scrollmagic.io/" target="_blank">https://scrollmagic.io/</a></li>
 
         <li><a
-            href="https://www.youtube.com/watch?v=fR0tHI0nFYk&list=PLfDzDRMWPZqUkOdCriEP_R4TxPSE9Hq-Q&index=20&t=15s">Javascript
+            href="https://www.youtube.com/watch?v=fR0tHI0nFYk&list=PLfDzDRMWPZqUkOdCriEP_R4TxPSE9Hq-Q&index=20&t=15s" target="_blank">Javascript
             Scroll Animation Tutorial | GSAP and ScrollMagic Tutorial</a></li>
       </ul>
       <br>
       <p>Intersection observer (various tree slide in animation and typing animation observers)</p>
       <ul>
-        <li><a
-            href="https://www.youtube.com/watch?v=T8EYosX4NOo&list=PLfDzDRMWPZqUkOdCriEP_R4TxPSE9Hq-Q&index=25">Introduction
+        <li><a href="https://www.youtube.com/watch?v=T8EYosX4NOo&list=PLfDzDRMWPZqUkOdCriEP_R4TxPSE9Hq-Q&index=25" target="_blank">Introduction
             to the Intersection Observer JavaScript API</a></li>
       </ul>
       <br>
       <p>Falling petals fixed on screen CSS</p>
       <ul>
-        <li><a
-            href="https://www.youtube.com/watch?v=FAF6iy2eUyw&list=PLfDzDRMWPZqUkOdCriEP_R4TxPSE9Hq-Q&index=28">Remake |
+        <li><a href="https://www.youtube.com/watch?v=FAF6iy2eUyw&list=PLfDzDRMWPZqUkOdCriEP_R4TxPSE9Hq-Q&index=28" target="_blank">Remake |
             Pure CSS Leaves Animation Effects | Html and CSS Animation Effect Tutorial</a></li>
-      </ul>
+      
+      <li><br>Falling petals code was used for SCSS/petals.css <br>
+        <a  href="https://codepen.io/khoathy/pen/ZZPbaQ" target="_blank">Codepen</a></li>
+          </ul>
       <br>
       <p>Typing animation</p>
       <ul>
 
-        <li><a href="https://www.youtube.com/watch?v=yefgBA1CecI">Typewriter Animation in CSS</a></li>
+        <li><a href="https://www.youtube.com/watch?v=yefgBA1CecI" target="_blank">Typewriter Animation in CSS</a></li>
       </ul>
       <br>
       <p>Responive videos for mp4 and Iframes</p>
       <ul>
 
-        <li><a href=" https://css-tricks.com/fluid-width-video/">Fluid width video</a></li>
+        <li><a href=" https://css-tricks.com/fluid-width-video/" target="_blank">Fluid width video</a></li>
       </ul>
     </section>
     <br>
@@ -131,13 +165,17 @@
         Images
       </h2>
       <hr>
-      <p>Tree svg was modified from the bonsai tree from <a
-          href="https://undraw.co/illustrations">https://undraw.co/illustrations</a></p>
+      <p>logo.svg and bonsai.svg was modified from the bonsai tree from <a
+          href="https://undraw.co/illustrations"  target="_blank">https://undraw.co/illustrations</a></p>
       <br>
-      <p>Various icons were referenced from <a href="https://fontawesome.com/">https://fontawesome.com/</a>
+      <p>Falling petals images was provided from this <a href="https://codepen.io/khoathy/pen/ZZPbaQ" target="_blank">Codepen</a></p>
+      <br>
+      <p>Various icons were referenced from <a href="https://fontawesome.com/ " target="_blank">https://fontawesome.com/</a>
       </p>
       <br>
-      <p>Other images found in the portfolio were produced by Sorren Jao</p>
+      <p>Mountains.png was referenced from the video game <i>The Elder Scrolls V: Skyrim</i>, image was retrieved from this <a href="https://elderscrolls.fandom.com/wiki/Throat_of_the_World" target="_blank">website</a></p>
+      <br>
+      <p>Images of projects were produced by Sorren Jao</p>
 
 
 
@@ -248,81 +286,11 @@
   <!-- end of card 2 -->
 
 
-  <script>
-    function open1() {
-      document.getElementById("code1").style.display = "block";
-      document.getElementById("openbutton1").style.display = "none";
-      document.getElementById("closebutton1").style.display = "block";
-    }
 
-    function close1() {
-      document.getElementById("code1").style.display = "none";
-      document.getElementById("openbutton1").style.display = "block";
-      document.getElementById("closebutton1").style.display = "none";
-    }
-    function open2() {
-      document.getElementById("code2").style.display = "block";
-      document.getElementById("openbutton2").style.display = "none";
-      document.getElementById("closebutton2").style.display = "block";
-    }
-
-    function close2() {
-      document.getElementById("code2").style.display = "none";
-      document.getElementById("openbutton2").style.display = "block";
-      document.getElementById("closebutton2").style.display = "none";
-    }
-    function open3() {
-      document.getElementById("code3").style.display = "block";
-      document.getElementById("openbutton3").style.display = "none";
-      document.getElementById("closebutton3").style.display = "block";
-
-    }
-
-    function close3() {
-      document.getElementById("code3").style.display = "none";
-      document.getElementById("openbutton3").style.display = "block";
-      document.getElementById("closebutton3").style.display = "none";
-    }
-
-
-
-
-
-    function bio1() {
-      document.getElementById("bio1").style.display = "block";
-      document.getElementById("bio2").style.display = "none";
-      document.getElementById("bio3").style.display = "none";
-
-
-    }
-    function bio2() {
-      document.getElementById("bio1").style.display = "none";
-      document.getElementById("bio2").style.display = "block";
-      document.getElementById("bio3").style.display = "none";
-
-
-    }
-    function bio3() {
-      document.getElementById("bio1").style.display = "none";
-      document.getElementById("bio2").style.display = "none";
-      document.getElementById("bio3").style.display = "block";
-
-
-    }
-
-    // hamburger menu
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-  </script>
 
 
   <script src="JS/section_observer.js"></script>
+  <script src="JS/chat_button.js"></script>
   <!-- <script type="text/javascript" src="JS/js/tracking.js"></script> -->
 
 

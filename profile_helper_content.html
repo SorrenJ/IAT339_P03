@@ -8,7 +8,7 @@
   <title>Sorren Jao - Profile Helper</title>
 
   <link rel="icon" href="assets/logo.svg" sizes=96x96 />
-
+  <link href="SCSS/togglemenu.css" rel="stylesheet">
   <link href="SCSS/navbar.css" rel="stylesheet">
 
   <link href="SCSS/inputform.css" rel="stylesheet">
@@ -87,15 +87,44 @@
       <a href="#3">
         <div class="button style-nav-item">Final Product</div>
       </a>
-      <!-- <a href="#4">
-        <div class="style-nav-item">Final Product</div>
-      </a> -->
-
+    
       <a href="#4">
         <div class="button style-nav-item">Reflection</div>
       </a>
 
     </div>
+
+
+        <!-- pop up message button -->
+        <button type="button" class="openReply" onclick="toggle_button()"><i class="fa-solid fa-bars"></i></button>
+
+        <!-- pop up content -->
+        <div class="chat-popup" id="myForm">
+    
+          <div class="livechat">
+            <button class="button closetoggle" type="button" onclick="toggle_button()">Close</button>
+          </div>
+    
+          <div class="inner">
+            <a href="index.html#project">
+              <div class="button style-nav-item" style="background-color:#DF62BC;">← Back to projects</div>
+            </a>
+            <a href="#1">
+              <div class="button style-nav-item">Abstract</div>
+            </a>
+            <a href="#2">
+              <div class="button style-nav-item">Process</div>
+            </a>
+            <a href="#3">
+              <div class="button style-nav-item">Final Product</div>
+            </a>
+            <a href="#4">
+              <div class="button style-nav-item">Reflection</div>
+            </a>
+          </div>
+    
+        </div>
+        <!-- end of pop up content -->
     <section class="content" id="1">
 
       <div class="youtube" style="--aspect-ratio: 3 / 4;">
@@ -334,81 +363,10 @@
   <!-- end of card 2 -->
 
 
-  <script>
-    function open1() {
-      document.getElementById("code1").style.display = "block";
-      document.getElementById("openbutton1").style.display = "none";
-      document.getElementById("closebutton1").style.display = "block";
-    }
-
-    function close1() {
-      document.getElementById("code1").style.display = "none";
-      document.getElementById("openbutton1").style.display = "block";
-      document.getElementById("closebutton1").style.display = "none";
-    }
-    function open2() {
-      document.getElementById("code2").style.display = "block";
-      document.getElementById("openbutton2").style.display = "none";
-      document.getElementById("closebutton2").style.display = "block";
-    }
-
-    function close2() {
-      document.getElementById("code2").style.display = "none";
-      document.getElementById("openbutton2").style.display = "block";
-      document.getElementById("closebutton2").style.display = "none";
-    }
-    function open3() {
-      document.getElementById("code3").style.display = "block";
-      document.getElementById("openbutton3").style.display = "none";
-      document.getElementById("closebutton3").style.display = "block";
-
-    }
-
-    function close3() {
-      document.getElementById("code3").style.display = "none";
-      document.getElementById("openbutton3").style.display = "block";
-      document.getElementById("closebutton3").style.display = "none";
-    }
-
-
-
-
-
-    function bio1() {
-      document.getElementById("bio1").style.display = "block";
-      document.getElementById("bio2").style.display = "none";
-      document.getElementById("bio3").style.display = "none";
-
-
-    }
-    function bio2() {
-      document.getElementById("bio1").style.display = "none";
-      document.getElementById("bio2").style.display = "block";
-      document.getElementById("bio3").style.display = "none";
-
-
-    }
-    function bio3() {
-      document.getElementById("bio1").style.display = "none";
-      document.getElementById("bio2").style.display = "none";
-      document.getElementById("bio3").style.display = "block";
-
-
-    }
-
-    // hamburger menu
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-  </script>
-
+ 
 
   <script src="JS/section_observer.js"></script>
+  <script src="JS/chat_button.js"></script>
   <!-- <script type="text/javascript" src="JS/js/tracking.js"></script> -->
 
 
