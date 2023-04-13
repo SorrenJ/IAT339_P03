@@ -206,18 +206,11 @@ opacity:1;
 
 @media only screen and (max-width: 1000px) {
   .portrait{
-    position:relative;
-    width: 100%;
-    // margin-left: 75%;
-    height: 100%;
-    // margin-top: -18%;
+    position: relative;
+    width: 70% !important;
+    height: 70% !important;
     margin-left: 0;
-    margin-right:0;
-
-    // background-size:contain;
-    // object-fit:contain;
-    // margin-bottom:500px;
-// display:none;
+    margin-right: 0;
   }
 
 }
