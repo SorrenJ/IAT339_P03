@@ -117,7 +117,7 @@
         <div class="button style-nav-item">Process</div>
       </a>
       <a href="#3">
-        <div class="button style-nav-item">Design Decisions</div>
+        <div class="button style-nav-item">Design Solutions</div>
       </a>
   
       <!-- <a href="#4">
@@ -146,6 +146,8 @@
           It is also an ecommerce website powered by Hikashop that sells online driving courses, podcasts, and books.
         </p>
         <br>
+        <a href="https://www.smartdrivetest.com/" target="_blank">
+          <button class="button"> Visit Website → </button></a>
         <br>
         <br>
       </div>
@@ -158,7 +160,7 @@
       <h2>Process</h2>
       <hr>
       <figure>
-        <img style="width:100%; " src="assets/Backend_Joomla_4_en.png">
+        <img style="width:100%; " src="assets/Backend_Joomla_4_en.png" alt="Backend">
         <figcaption><i>Figure 1.</i> Joomla! interface.</figcaption>
       </figure>
       <p>
@@ -167,7 +169,7 @@
         appear archaic as if it was a site designed from the early 2000s.
       </p>
       <figure>
-        <img style="width:100%; " src="assets/SDT_compare.png" alt="placeholder"><br>
+        <img style="width:100%; " src="assets/SDT_compare.png" alt="Compare"><br>
         <figcaption><i>Figure 2.</i> Old SDT site before my redesign.</figcaption>
       </figure>
       <br><br>
@@ -181,7 +183,7 @@
         design of SDT’s landing page ultimately went differently.
       </p>
       <figure>
-        <img style="width:100%; " src="assets/smart_driving_school.png" alt="placeholder"><br>
+        <img style="width:100%; " src="assets/smart_driving_school.png" alt="smart_driving_school"><br>
         <figcaption><i>Figure 3.</i> Smart driving school site.</figcaption>
       </figure>
       <br><br>
@@ -191,13 +193,19 @@
         hierarchy of content provided by SDT. SDT also had different priorities compared to Smart Driving School. SDT
         priorities include purchasing audiobooks (driving), listening to the podcasts, booking practice drives, and
         writing practice tests. Services towards teaching new drivers was a top priority. The formatting of content was
-        also a determining factor towards my design decisions.
-        I played around with hover functions in conjunction with CSS animations to add a neat effect for the buttons
-        seen in Figure 4.
+        also a determining factor towards my design decisions. I used Figma to mock-up a simple layout for the SDT homepage seen in
+        Figure 4. This mock-up helped communicate my ideas to my team before coding it out.
       </p>
 
 
       <br>
+      <figure>
+        <img style="width:100%; " src="assets/SDT_Layout.svg" alt="SDT_Layout"><br>
+        <figcaption><i>Figure 4. </i>Mock-up Layout of SDT</figcaption>
+      </figure>
+      <br>
+      <p>  I played around with hover functions in conjunction with CSS animations to add a neat effect for the buttons
+        seen in Figure 5.</p>
       <figure>
         <div id="coursea">
           <div class="inner " data-position="fpcourse1">
@@ -224,7 +232,7 @@
           </div>
         </div>
 
-        <figcaption><i>Figure 4.</i> Course selection on Landing page.</figcaption>
+        <figcaption><i>Figure 5.</i> Course selection on Landing page.</figcaption>
       </figure>
       <br><br>
       <div><button class="button" id="openbutton1" onclick="open1()">See code</button></div>
@@ -311,47 +319,40 @@
       <div><button class="button" id="closebutton1" onclick="close1()" style="display:none;">Hide code</button></div>
 
       <br>
-      <p>I also created an animated footer using CSS found on every page as seen in Figure 5. Using the transform rotate
+      <p>I also created an animated footer using CSS found on every page as seen in Figure 6. Using the transform rotate
         selector and preserve-3D property creates a depth of field effect for the moving cars.</p>
       <br>
-      <!-- road anime start -->
-      <div id="wrapper4" class="tck-wrapper">
-        <div class="inner ">
-
-          <div id="roadBlock">
-            <div class="inner " data-position="road">
-              <div class="tck-module moduletable">
-                <div class="tck-module-text">
-
-
-                  <div class="custom">
-                    <div id="road" style="background:black">
-                      <div id="div2"><i class="fa-solid fa-car-side"
-                          style="font-size: 50px; color: white; text-shadow: 2px 2px 2px #0099FF
-                                ; position: relative; animation: block1 6s infinite linear; margin-top: -15px; transform-style: preserve-3d; transform: rotateX(-45deg)scaleX(-1);"></i>
-                        <hr
-                          style="height: 5px; border-top: 8px dashed white; margin-top: 25px; border-bottom: none; overflow: hidden;">
-                        <i class="fa-solid fa-car-side"
-                          style="font-size: 50px; margin-top: -25px; color: white; text-shadow: 2px 2px 2px #0099FF
-                                ;  position: relative; ;  animation: block1 5s infinite linear; transform-style: preserve-3d; transform: rotateX(-45deg)scaleX(-1);"></i>
-                        <hr style="background: yellow; height: 5px; overflow: hidden;"><i class="fa-solid fa-truck"
-                          style="font-size: 50px; color: white; text-shadow: 2px 2px 2px #0099FF
-                                ;  margin-top: -15px; position: relative; animation: block1 6s infinite reverse linear; transform: rotateX(-45deg)scaleX(1);"></i>
+            <!-- road anime start -->
+            <div id="wrapper4" class="tck-wrapper">
+              <div class="inner ">
+      
+                <div id="roadBlock">
+                  <div class="inner " data-position="road">
+                    <div class="tck-module moduletable">
+                      <div class="tck-module-text">
+      
+      
+                        <div class="custom">
+                          <div id="road">
+                            <div id="div2"><i class="moving_car fa-solid fa-car-side"></i>
+                              <hr class="white_road_marks">
+                              <i class="moving_car2 fa-solid fa-car-side"></i>
+                              <hr class="yellow_road_marks"><i class="truck fa-solid fa-truck"></i>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
+      
                   </div>
                 </div>
+      
               </div>
-
             </div>
-          </div>
-
-        </div>
-      </div>
 
     <figure>
 
-    <figcaption><i>Figure 5.</i> Animated footer using CSS.</figcaption>
+    <figcaption><i>Figure 6.</i> Animated footer using CSS.</figcaption>
   </figure>
     <br>
     <div><button class="button" id="openbutton2" onclick="open2()">See code</button></div>
@@ -400,23 +401,31 @@
     <section class="content" id="3">
 
       <h2>
-       Design Decisions
+       Design Solutions
       </h2>
       <hr>
       <p>
-        Another major design I made towards the landing page was the use of scroll storytelling. As the user scrolls down, the user gathers a summary for what the site is about and what services are offered. When a user opens the page, they would be presented with the major services provided first. As they continue scrolling down they learn a bit about the owner of SDT, and then some featured podcasts. While keeping information concise, users are featured with “read more” links if they choose to see more of a specific content.
+        Another major design I made towards the landing page was the use of scroll storytelling. This was my solution towards the busy content carried from the old SDT site. As the user scrolls down, the user gathers a summary for what the site is about and what services are offered. When a user opens the page, they would be presented with the major services provided first. As they continue scrolling down they learn a bit about the owner of SDT, and then some featured podcasts. While keeping information concise, users are featured with “read more” links if they choose to see more of a specific content.
         The landing page also features the latest SDT youtube video. To always display the latest video I had to embed the SDT's youtube playlist link in the Iframe tag as shown below.
        
       </p>
       <figure>
         <iframe src="https://www.youtube.com/embed/pq270fxNGrM" position="absolute" width="100%" height="360" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
-        <figcaption><i>Figure 6.</i> Always displays the latest video in the playlist.</figcaption>
+        <figcaption><i>Figure 7.</i> Always displays the latest video in the playlist.</figcaption>
       </figure>
       <br><br>
       <div><button class="button" id="openbutton3"  onclick="open3()" >See code</button></div>
       <div><button class="button"  id="closebutton3" onclick="close3()" style="display:none;">Hide code</button></div>
      <pre id="code3" style="display:none;"><code>
-      &#x3C;iframe src=&#x22;https://www.youtube.com/embed/pq270fxNGrM&#x22; width=&#x22;560&#x22; height=&#x22;315&#x22; title=&#x22;YouTube video player&#x22; frameborder=&#x22;0&#x22; allow=&#x22;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#x22; allowfullscreen=&#x22;allowfullscreen&#x22;&#x3E;&#x3C;/iframe&#x3E;
+      &#x3C;iframe src=&#x22;https://www.youtube.com/embed/pq270fxNGrM&#x22; 
+      width=&#x22;560&#x22; height=&#x22;315&#x22; 
+      title=&#x22;YouTube video player&#x22; 
+      frameborder=&#x22;0&#x22; 
+      allow=&#x22;accelerometer; autoplay; 
+      clipboard-write; encrypted-media; 
+      gyroscope; picture-in-picture&#x22; 
+      allowfullscreen=&#x22;
+      allowfullscreen&#x22;&#x3E;&#x3C;/iframe&#x3E;
     
     </code></pre>
     <br><br>
@@ -424,9 +433,9 @@
       The style guide for the template is similar to the landing page but it has some minor differences.
       </p>
       <figure>
-        <video  width="100%" height="560px" loop="1"  src="assets/vids/ListPage.mp4"  autoplay muted><source src="vids/ListPage.mp4" type="video/webm">
+        <video  width="100%" height="60%" loop="1"  src="assets/vids/ListPage.mp4"  autoplay muted><source src="vids/ListPage.mp4" type="video/webm">
           <source src="assets/vids/ListPage.mp4" type="video/mp4"></video><br>
-        <figcaption><i>Figure 7.</i> Listing page template</figcaption>
+        <figcaption><i>Figure 8.</i> Listing page template</figcaption>
       </figure>
       <br><br>
 
@@ -454,7 +463,11 @@
       <p>
         After leaving Cybersalt Consulting, SDT has been fully functional since. A large number of customers use this site today whether for purchasing services, taking courses, or listening to podcasts. Rick August, the owner of Smart Drive Test, very much appreciates what I've done with the landing page, especially my CSS Animations and considers this a nice touch towards the branding.
       </p>
-      
+      <br>
+      <p>My story about Smart Drive Test and my time working in Cybersalt Consulting was featured in the Simon Fraser University OLC Blog.
+      <a href="https://olc.sfu.ca/index.php/blog/how-tailor-your-website-success" target="_blank">Read about it here!</a></p>
+        <br>
+      <br><br>
       <br><br>
 
     </section>

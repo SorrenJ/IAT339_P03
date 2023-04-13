@@ -5,17 +5,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sorren Jao - Styleguide</title>
+  <title>Sorren Jao - References</title>
 
   <link rel="icon" href="assets/logo.svg" sizes=96x96 />
 
-  <link href="CSS/styleguide.css" rel="stylesheet">
-  <link href="CSS/navbar.css" rel="stylesheet">
-  <link href="CSS/containers.css" rel="stylesheet">
-  <link href="CSS/card.css" rel="stylesheet">
+  <link href="SCSS/sdt.css" rel="stylesheet">
+  <link href="SCSS/navbar.css" rel="stylesheet">
 
+
+  <link href="SCSS/inputform.css" rel="stylesheet">
+  <link href="SCSS/containers.css" rel="stylesheet">
+  <link href="SCSS/project.css" rel="stylesheet">
+
+  <link href="SCSS/typing.css" rel="stylesheet">
+
+  <!-- <link href="SCSS/styleguide.css" rel="stylesheet"> -->
+  <link href="SCSS/card.css" rel="stylesheet">
   <!-- font awesome icons -->
   <script src="https://kit.fontawesome.com/0b0401bad6.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="JS/js/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="JS/js/lib/highlight.pack.js"></script>
+  <script type="text/javascript" src="JS/js/lib/modernizr.custom.min.js"></script>
 </head>
 
 <body>
@@ -50,135 +61,172 @@
   <!-- page navigation -->
   <br>
   <br>
-  <div class="style_nav">
+
+  <div class="project_banner">
+    <h1>Styleguide</h1>
 
 
 
-    <a href="#branding">
-      <div class="style-nav-item">Branding</div>
-    </a>
-    <a href="#colors">
-      <div class="style-nav-item">Colors</div>
-    </a>
-    <a href="#fonts">
-      <div class="style-nav-item">Font</div>
-    </a>
 
-    <a href="#interactive">
-      <div class="style-nav-item">Interactive</div>
-    </a>
+    <br><br>
 
-    <a href="#projects">
-      <div class="style-nav-item">Project Listing</div>
-    </a>
-    <a href="#slideshow">
-      <div class="style-nav-item">About Slideshow</div>
-    </a>
-    <a href="#templates">
-      <div class="style-nav-item">Templates</div>
-    </a>
-    <a href="#git">
-      <div class="style-nav-item">Git Repo</div>
-    </a>
+
+
   </div>
 
-
-  <!-- page section starts -->
   <section>
 
-
     <!-- brand identity section, composed of header then container below that is flex for the image and paragraph -->
-    <section id="branding">
+
+    <div class="style_nav">
+
+
+      <a href="index.html#project">
+        <div class="button style-nav-item" style="background-color:#DF62BC;">← Back to projects</div>
+      </a>
+      <a href="#1">
+        <div class="button style-nav-item">Branding</div>
+      </a>
+      <a href="#2">
+        <div class="button style-nav-item">Colors</div>
+      </a>
+      <a href="#3">
+        <div class="button style-nav-item">Font</div>
+      </a>
+
+      <!-- <a href="#4">
+        <div class="style-nav-item">Final Product</div>
+      </a> -->
+
+      <a href="#4">
+        <div class="button style-nav-item">Interactive</div>
+      </a>
+      <a href="#5">
+        <div class="button style-nav-item">About Slideshow</div>
+      </a>
+      <a href="#6">
+        <div class="button style-nav-item">Scroll Animations</div>
+      </a>
+      <a href="#7">
+        <div class="button style-nav-item">Git Repo</div>
+      </a>
+    </div>
+    <section class="content" id="1">
+
+
+
+
       <h2>
         Brand Identity
       </h2>
       <hr>
-      <div>
-        <img class="logo" src="assets/Blossom_Tree.svg" alt="logo">
+      <br>
+      <img class="logo" style="width:50%" src="assets/Blossom_Tree.svg" alt="logo">
+      <p> My brand identity is the cherry blossom to represent growth and new beginnings.</p>
 
-        <p class="wrap">
-          My brand identity is the cherry blossom to represent growth and new beginnings.
-        </p>
-        <br>
-        <br>
-        <br>
-      </div>
+
     </section>
 
 
-
-    <section id="colors">
-      <!-- Color Palette container -->
+    <br>
+    <br>
+    <section class="content" id="2">
+      <h2>Color Palette</h2>
+      <hr>
       <div class="styleguide-container">
-        <br>
-        <br>
-        <br>
-        <h2>Color Palette</h2>
-        <hr>
-        <div class="colorPalette_white"></div>
-        <p style="display: inline"> #white - Background</p>
-        <br><br>
         <div class="colorPalette_black"></div>
         <p style="display: inline"> #000000; - Foreground (i.e. Buttons, Header, Footer, etc.)</p>
         <br><br>
-        <div class="colorPalette_pink"></div>
-        <p style="display: inline"> #DF62BC - Hover or focus</p>
-        <br><br>
-        <div class="colorPalette_black"></div>
-        <p style="display: inline"> #000000 - Body Text Font</p>
+        <div class="colorPalette_white"></div>
+        <p style="display: inline"> #white - Hover or focus</p>
         <br><br>
         <div class="colorPalette_transgrey"></div>
         <p style="display: inline"> #2348624d - Container Border</p>
         <br><br>
         <div class="colorPalette_pink"></div>
-        <p style="display: inline"> #DF62BC - Brand Logo </p>
+        <p style="display: inline"> #DF62BC or $brand_pink - Brand Logo , Emphasis </p>
         <br><br>
+
+        <h3>Light mode</h3>
+        <hr>
+        <br>
+        <div class="colorPalette_white"></div>
+        <p style="display: inline"> #white - Light background</p>
+        <br><br>
+        <div class="colorPalette_black"></div>
+        <p style="display: inline"> #000000 - Light Body Text Font</p>
+        <br><br>
+        <div class="colorPalette_black"></div>
+        <p style="display: inline"> #000000 - Light Headings</p>
+        <br><br>
+        <h3>Dark mode</h3>
+        <hr>
+        <br>
+        <div class="colorPalette_black"></div>
+        <p style="display: inline"> #000000 - Dark background</p>
+        <br><br>
+        <div class="colorPalette_white"></div>
+        <p style="display: inline"> #white - Dark Body Text Font</p>
+        <br><br>
+        <div class="colorPalette_white"></div>
+        <p style="display: inline"> #white - Dark Headings</p>
+        <br><br>
+
+
       </div>
-      <!-- Color Palette container ends -->
     </section>
-
-    <!-- specific stlying for the typography and then various text styles for headers and body text -->
-
-    <section id="fonts">
+    <section class="content" id="3">
 
       <h2>
         Typography & Text Elements
       </h2>
       <hr>
 
-      <p class="typography">
+      <p>
         Headings use 'Verdana' Font-family. Body text including paragraphs and buttons use 'Verdana' font-family.
 
       </p>
-      <div class="text_elements_container">
-        <div class="text_elements">
-
-          <h1>Heading 1</h1>
-
-          <h2>Heading 2</h2>
-
-          <h3>Heading 3</h3>
-
-          <h4>Heading 4</h4>
-
-        </div>
-
-        <div class="text_elements">
-          <p class="body_text">
-            Body Text
-          </p>
-          <p class="caption_text">
-            Caption Text
-          </p>
-        </div>
 
 
+      <h1>Heading 1</h1>
+
+      <h2>Heading 2</h2>
+
+      <h3>Heading 3</h3>
+
+      <h4 style="color:black">Heading 4</h4>
+
+
+
+      <p>Body Text</p>
+
+
+      <p>Caption Text</p>
+      </p>
+
+
+      <div style="background:black; color:white">
+
+        <h1>Heading 1</h1>
+
+        <h2>Heading 2</h2>
+
+        <h3>Heading 3</h3>
+
+        <h4>Heading 4</h4>
+
+
+
+        <p>Body Text</p>
+
+
+        <p>Caption Text</p>
+        </p>
       </div>
-
     </section>
+    <br><br>
+    <section class="content" id="4">
 
-    <!-- interactive elements section with the intext link & then the 2 kinds of buttons used -->
-    <section id="interactive">
       <h2>
         Interactive Elements
       </h2>
@@ -187,155 +235,417 @@
       <h3>
         In-text link
       </h3>
-      <a target=_blank href="https://www.thesweetspotbakery.ca" class="nav-main"> The Real Sweet Spot </a>
-
+      <br>
+      <a target=_blank href="https://github.com/SorrenJ/IAT339_P03" class="nav-main">github</a>
+      <br><br>
       <h3>
         Buttons
       </h3>
-     
-      <a target="_blank" href="https://olc.sfu.ca/index.php/blog/boosting-productivity-web-development"><div
-        class="button"> Read blog </div></a>
-      
+      <br>
+      <a target="_blank" href="https://olc.sfu.ca/index.php/blog/boosting-productivity-web-development">
+        <div class="button"> Read blog </div>
+      </a>
+<br><br>
+<h3>
+ Inputs & Textfields
+</h3>
+<br>
+<div class="input-container name">
+  <input type="email" id="email-address" name="_replyto" placeholder=" " required="required">
+  <label class="placeholder-text" for="email-address">
+    <span class="placeholder-name">Email</span>
+  </label>
+</div>
+<br>
 
+<div class="input-container name">
+  <textarea rows="5" name="message" id="message" placeholder=" " required=""></textarea>
+  <label class="placeholder-text" for="message">
+    <span class="placeholder-name">Message</span>
+  </label>
+</div>
+      <br><br>
       <h3>
         Gallery
       </h3>
+      <br>
+      <br>
+      <div class="flex-container3">
+
+        <div class="flex-container3_item " data-aos="zoom-out-up"><img src="assets/tailor.png" alt="tailor">
+          <br>
+          <p> How to Tailor your Website for Success</p>
+          <a target="_blank" href="https://olc.sfu.ca/index.php/blog/how-tailor-your-website-success">
+            <div class="button"> Read blog </div>
+          </a>
+
+        </div>
+        <div class="flex-container3_item " data-aos="zoom-out-up"><img src="assets/zoom_me.png" alt="me">
+          <br>
+          <p>Joomla! Team Interview</p>
+          <a target="_blank" href="https://www.youtube.com/watch?v=lzK-7wYOdo0">
+            <div class="button"> Watch video
+            </div>
+          </a>
+        </div>
+        <div class="flex-container3_item " data-aos="zoom-out-up"><img src="assets/Hamburger.png" alt="hamburger">
+          <br>
+          <p>Boosting Productivity with Web Development</p>
+          <a target="_blank" href="https://olc.sfu.ca/index.php/blog/boosting-productivity-web-development">
+            <div class="button"> Read blog </div>
+          </a>
+        </div>
+      </div>
+      <br>
+      <br>
+
+
+
     </section>
 
 
 
+    
+    <div class="styleguide_projectcontainer">
+      <section class="section2">
+        <div class="greenbox">
+        </div>
+        <div class="flex-container">
 
+          <div class="proj-img-container">
 
-    <br>
-    <div class="flex-container3">
+            <img style="width:100%" src="assets/sdt_gif.gif" alt="sdt">
 
-      <div class="flex-container3_item " data-aos="zoom-out-up"><img src="assets/tailor.png" alt="tailor">
-        <br>
-        <p> How to Tailor your Website for Success</p>
-        <a target="_blank" href="https://olc.sfu.ca/index.php/blog/how-tailor-your-website-success"><div
-            class="button"> Read blog </div></a>
-
-      </div>
-      <div class="flex-container3_item " data-aos="zoom-out-up"><img src="assets/zoom_me.png" alt="me">
-        <br>
-        <p>Joomla! Team Interview</p>
-        <a target="_blank" href="https://www.youtube.com/watch?v=lzK-7wYOdo0"><div class="button"> Watch video
-        </div></a>
-      </div>
-      <div class="flex-container3_item " data-aos="zoom-out-up"><img src="assets/Hamburger.png" alt="hamburger">
-        <br>
-        <p>Boosting Productivity with Web Development</p>
-        <a target="_blank" href="https://olc.sfu.ca/index.php/blog/boosting-productivity-web-development"><div
-            class="button"> Read blog </div></a>
-      </div>
-    </div>
-    <br>
-    <br>
-
-
-    <br>
-    <h2 id="projects">
-      Project Listing Template
-    </h2>
-    <hr>
-  </section>
-  
-
-  <!-- product template section listing a few products with image, description, price and then button below to "add to cart" (non functional) 
-               made with a flex container for product-list and then containers for the product molecules
-          -->
+          </div>
+          <div>
+            <h1>Smart Drive Test</h1>
+            <p> A learning platform, teaching new and experienced drivers ways to improve driving.</p>
+            <div class="tag"> Joomla!</div>
+            <div class="tag"> CSS</div>
+            <div class="tag"> HTML</div>
+            <div class="tag"> Hikashop</div>
+            <br><br>
+            <a href="Smart_Drive_Test.html">
+              <div class="button"> Read more </div>
+            </a>
+          </div>
+        </div>
 
 
 
-  <section class="section2">
-    <div class="greenbox">
-    </div>
-    <div class="flex-container">
 
-      <div class="proj-img-container">
 
-        <img src="assets/sdt_gif.gif" alt="sdt">
-       
-      </div>
-      <div>
-        <h1>Smart Drive Test</h1>
-        <p> A learning platform, teaching new and experienced drivers ways to improve driving.</p>
-        <div class="tag"> Joomla!</div>
-        <div class="tag"> CSS</div>
-        <div class="tag"> HTML</div>
-        <div class="tag"> Hikashop</div>
-        <br><br>
-        <a href="Smart_Drive_Test.html"><div class="button"> Read more </div></a>
-      </div>
+      </section>
+
+
     </div>
 
 
 
 
 
-  </section>
+    <section id="5" class="content">
+      <h2>
+        About Slideshow
+      </h2>
+      <hr>
+    </section>
 
-  <br>
-  <section class="section2">
-    <div class="greenbox">
-    </div>
-    <div class="flex-container">
-      <div class="proj-img-container"> <img src="assets/ImgUI/Picture4.png" alt="profile_helper">
-     
-      </div>
-      <div>
-        <h1>Profile Helper</h1>
-        <p>A content generator tool to help with creating graduate student profile pages.</p>
-        <div class="tag">HTML</div>
-        <div class="tag"> CSS</div>
-        <div class="tag">JavaScript</div>
-        <div class="tag">jQuery</div>
-        <br><br>
-        <a href="profile_helper_content.html"><div class="button"> Read more </div></a>
-      </div>
-    </div>
-  </section><br>
-  <section id="slideshow">
-    <h2>
-      About Me Slideshow Template
-    </h2>
-    <hr>
-  </section>
-  <div>
-    <div class="card">Card1 </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/random/1000x1000" alt="random" />
-      <div class="card-content">
-        Card2
-      </div>
-    </div>
-    <div class="card">Card3 </div>
-    <div class="card">Card4 </div>
-  </div>
+    <div class="styleguide_slidecontainer">
+      <!-- 2nd card -->
+      <div id="contact" class="card">
+        <div class="card-container-inverse">
+          <div class="card-container-item-left-inverse contact_box">
+            <h1>Light</h1>
 
 
-  <section id="templates">
-    <h2>Template pages</h2>
-    <hr>
-    <a target=_blank href="index.html" class="nav-main">Home template</a>
+          </div>
+
+          <div class="card-container-item-right-inverse ">
+            <h1>Dark</h1>
+          </div>
+          <div class="triangleTopRight-inverse"></div>
+        </div>
+      </div>
+      <!-- end of card 2 -->
+
+
+      <br><br>
+      <!-- 1st card -->
+      <div class="card">
+
+
+
+        <!-- start of card container-->
+        <div class="card-container-inverse-2">
+
+
+
+
+
+
+          <!-- start of 1st item -->
+          <div class="card-container-item-left-inverse-2">
+            <br>
+            <h1>Dark</h1>
+            <br>
+          </div>
+          <!-- end of 1st item -->
+
+          <div class="triangleTopLeft-inverse"></div>
+
+
+
+          <!-- start of 2nd item -->
+          <div class="card-container-item-right-inverse-2">
+
+            <h1 style="color:black">Light</h1>
+
+
+          </div>
+          <!-- end of 2nd item -->
+
+
+        </div>
+        <!-- end of card container-->
+      </div>
+      <!-- end of 1st card -->
+
+
+    </div>
+
+
+    <section id="6" class="content ">
+      
+      <h2>
+        Scroll Animations
+      </h2>
+      <hr>
+<a href="Scroll_Animations.html"><h2>Checkout my scroll animations here</h2></a>
+    </section>
     <br><br>
-    <a target=_blank href="project.html" class="nav-main">Project template</a>
+    <section id="7" class="content ">
+      
+      <h2>
+       Github Link
+      </h2>
+      <hr>
+<a href="https://github.com/SorrenJ/IAT339_P03"><h2>Visit my Github here</h2></a>
+    </section>
+
+<br><br><br><br><br>
+
+
   </section>
+  <!-- 2nd card -->
+  <div id="contact" class="start card">
+    <div class="card-container-inverse">
+      <div class="card-container-item-left-inverse contact_box">
+        <div class="wrapper-h1-banner">
+          <div class="typing-demo type_medium_size">
+            <h1>Contact Me</h1>
+          </div>
+        </div>
+        <div class="banner_heading">
+          <h1>Contact Me</h1>
+        </div>
+        <br>
+
+
+      </div>
+
+      <div class="card-container-item-right-inverse center_text">
+        <div class="formContainer">
+          <div class="order-flex-item">
+
+            <!-- order item 0 starts -->
+
+            <!-- <h2>Delivery Information</h2> -->
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mvonpwkn"
+              method="post">
+              <fieldset id="fs-frm-inputs">
+
+                <div class="input-container name">
+                  <input type="text" id="full-name" name="name" placeholder=" " required="required">
+                  <label class="placeholder-text" for="full-name">
+                    <span class="placeholder-name">Full name</span>
+                  </label>
+                </div>
+                <br>
+
+                <div class="input-container name">
+                  <input type="email" id="email-address" name="_replyto" placeholder=" " required="required">
+                  <label class="placeholder-text" for="email-address">
+                    <span class="placeholder-name">Email</span>
+                  </label>
+                </div>
+                <br>
+
+                <div class="input-container name">
+                  <textarea rows="5" name="message" id="message" placeholder=" " required=""></textarea>
+                  <label class="placeholder-text" for="message">
+                    <span class="placeholder-name">Message</span>
+                  </label>
+                </div>
+              </fieldset>
 
 
 
-  <!-- Our github repo link-->
-  <section id="git">
-    <h2>Git Repository</h2>
-    <hr>
-    <a target=_blank href="https://github.com/SorrenJ/IAT339_P03" class="nav-main">Visit My Git
-      Repo </a>
-  </section>
 
-  <br>
+              <br>
+              <div class="button next"> <input class="button next" type="submit" value="Submit" style="margin:auto;">
+              </div>
+            </form>
 
-  <br>
 
+          </div>
+        </div>
+        <div class="further_links">
+          <a href="https://github.com/SorrenJ/IAT339_P03" target="_blank">
+            <div class="button">Visit my Github for more projects</div>
+          </a>
+          <br>
+          <a href="styleguide.html" target="_blank">
+            <div class="button">See my styleguide</div>
+          </a>
+          <br>
+          <a href="references.html">
+            <div class="button">See my references</div>
+          </a>
+        </div>
+      </div>
+      <div class="triangleTopRight-inverse"></div>
+    </div>
+  </div>
+  <!-- end of card 2 -->
+
+
+  <script>
+    function open1() {
+      document.getElementById("code1").style.display = "block";
+      document.getElementById("openbutton1").style.display = "none";
+      document.getElementById("closebutton1").style.display = "block";
+    }
+
+    function close1() {
+      document.getElementById("code1").style.display = "none";
+      document.getElementById("openbutton1").style.display = "block";
+      document.getElementById("closebutton1").style.display = "none";
+    }
+    function open2() {
+      document.getElementById("code2").style.display = "block";
+      document.getElementById("openbutton2").style.display = "none";
+      document.getElementById("closebutton2").style.display = "block";
+    }
+
+    function close2() {
+      document.getElementById("code2").style.display = "none";
+      document.getElementById("openbutton2").style.display = "block";
+      document.getElementById("closebutton2").style.display = "none";
+    }
+    function open3() {
+      document.getElementById("code3").style.display = "block";
+      document.getElementById("openbutton3").style.display = "none";
+      document.getElementById("closebutton3").style.display = "block";
+
+    }
+
+    function close3() {
+      document.getElementById("code3").style.display = "none";
+      document.getElementById("openbutton3").style.display = "block";
+      document.getElementById("closebutton3").style.display = "none";
+    }
+
+
+
+
+
+    function bio1() {
+      document.getElementById("bio1").style.display = "block";
+      document.getElementById("bio2").style.display = "none";
+      document.getElementById("bio3").style.display = "none";
+
+
+    }
+    function bio2() {
+      document.getElementById("bio1").style.display = "none";
+      document.getElementById("bio2").style.display = "block";
+      document.getElementById("bio3").style.display = "none";
+
+
+    }
+    function bio3() {
+      document.getElementById("bio1").style.display = "none";
+      document.getElementById("bio2").style.display = "none";
+      document.getElementById("bio3").style.display = "block";
+
+
+    }
+
+    // hamburger menu
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+
+  <script src="JS/section_observer.js"></script>
+  <!-- <script type="text/javascript" src="JS/js/tracking.js"></script> -->
+
+
+
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script> -->
+
+
+  <!-- cdn scrollmagic lib -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js'></script>
+
+  <!-- cdn scroll magic indicator for testing -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js'></script>
+
+  <!-- cdn gsap a lib for scroll anime -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js'></script>
+
+
+  <!-- cdn for scroll shape movement -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+
+  <!-- cdn for scroll shape morphing -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js"></script>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script>
+
+  <!-- cdn for css -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"
+    integrity="sha512-Xc+rcY3w0DANwcFGWBcnBf2dw/p5a4IBAKqHdBJScNOnIH+qoQYE6xuWEdW3wiP7Q+XvL9MacrnKkzoP0Kexug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- cdn for shape smooth movement -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"
+    integrity="sha512-plyexAULVlTExvDn2yUZFJV9F8q+53MC/GpU9dEuNGXmrrI3J8Rcffjvxg3OOBALBvF+UILPLIBEoCeF2maqTQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+
+  <script src="JS/typing_observer.js"></script>
+  <script src="JS/typing_observer2.js"></script>
+  <script src="JS/element_fadein.js"></script>
+
+
+
+
+  <script src="JS/Blossom_Transition_responsive.js">defer</script>
+  <script src="JS/grow_app_tree.js"></script>
 
 </body>
 
