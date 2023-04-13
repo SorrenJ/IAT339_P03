@@ -369,7 +369,7 @@
   
   
   /*3D road animation controls*/
-    #div2{
+    .div2{
      
       margin-top:1px;
       /* padding: 50px; */
@@ -385,11 +385,11 @@
     .moving_car{
 
         font-size: 50px; color: white; text-shadow: 2px 2px 2px #0099FF
-                                ; position: relative; animation: block1 16s infinite linear; margin-top: -15px; transform-style: preserve-3d; transform: rotateX(-45deg)scaleX(-1);
+                                ; position: relative; animation: block1 16s infinite linear; margin-top: -15px; transform-style: preserve-3d; transform: rotateX(-55deg)scaleX(-1);
     }
 .moving_car2{
-    font-size: 50px; margin-top: -25px; color: white; text-shadow: 2px 2px 2px #0099FF
-                                ;  position: relative; ;  animation: block1 15s infinite linear; transform-style: preserve-3d; transform: rotateX(-45deg)scaleX(-1);
+    font-size: 50px; margin-top: -35px; color: white; text-shadow: 2px 2px 2px #0099FF
+                                ;  position: relative; ;  animation: block1 15s infinite linear; transform-style: preserve-3d; transform: rotateX(-55deg)scaleX(-1);
 }
 
     .white_road_marks{
@@ -400,9 +400,15 @@
 }
   .truck{
     font-size: 50px; color: white; text-shadow: 2px 2px 2px #0099FF
-                                ;  margin-top: -15px; position: relative; animation: block1 16s infinite reverse linear; transform: rotateX(-45deg)scaleX(1);
+                                ;  margin-top: -15px; position: relative; animation: block1 16s infinite reverse linear; transform: rotateX(-55deg)scaleX(1);
   }
-      #road {
+
+  .custom{
+    overflow:hidden;
+    overflow-x: hidden;
+    background:black;
+  }
+      .road {
         position: relative;
         height: 200px;
         width: 100%;
@@ -411,6 +417,7 @@
         /*border: 1px solid blue;*/
         perspective: 15em;
   overflow:hidden;
+  overflow-x: hidden;
       }
   
   
@@ -860,13 +867,11 @@
   }
   
   /*inner content of each course*/
-  #inncontent1 {
-  margin-top:25px;
-  transform: scale(1.2);
- height: 350px;
-  
-  
-   width:350px;
+#inncontent1 {
+margin-top:25px;
+transform: scale(1.2);
+height: 350px;
+width:350px;
   }
   
   
@@ -904,11 +909,11 @@
     /*course inner content mobile*/
   #inncontent1 {
   
-   margin-left: 0%;
-   height: 100%;
-   width:100%;
+  margin-left: 0%;
+  height: 100%;
+  width:100%;
   margin-top:-10px;
-    transform: scale(1);
+  transform: scale(1);
   }
     
    /*meet your instructor mobile*/

@@ -169,8 +169,7 @@ font-size:2.5em;
   width:33.33%;
    padding-left:15px;
    padding-right:15px;
-   padding-left:auto;
-   padding-right:auto;
+  
    margin-left:auto;
    margin-right:auto;
    text-align:center;
@@ -196,8 +195,6 @@ font-size:2.5em;
    .flex-container3 {
  
     flex-direction:column;
-    padding-left:auto;
-    padding-right:auto;
     margin-left:auto;
     }
     .flex-container3_item {
@@ -366,7 +363,6 @@ color:black;
     z-index: 3;
     // background-color: black;
   }
-  
 
 
   .card-container-item-right-inverse{
@@ -385,21 +381,29 @@ height:100vh;
   background-color: #000000; 
   // align-items: right;
  color:#ffffff;
-  }
 
+
+}
+ 
+.card-container-item-right-inverse.contact_fields{
+    
+  height: fit-content;
+  padding-bottom:2%;
+}
   
   @media only screen and (max-width: 1000px) {
     /* project container */
   .card-container-inverse  {
     text-align:center;
        flex-direction:column;
+       background-color: transparent; 
      }
     
   .card-container-item-left-inverse{
     order:1;
     width:100%;
     text-align: center;
-  margin-top: 224px;
+
      margin-left:0;
      background-color: #ffffff; 
      color:rgb(255, 255, 255);
@@ -408,9 +412,9 @@ height:100vh;
      padding-right:5%;
 font-size:1em;
 margin-bottom:5px;
-
+margin-top: 452px;
 // height:25vh;
-display:none;
+ display:none;
     }
     
   .card-container-item-right-inverse{
@@ -454,7 +458,7 @@ margin-bottom:5px;
     display: flex;
     justify-content: center;
     // background-color: #ffffff; 
-    height:100vh;
+
     flex-direction:row;
     color:white; 
     background-color: black;
@@ -522,9 +526,15 @@ margin-bottom:5px;
       margin-right:auto;
       position:relative;
       // border-top: dashed white;
-      padding-top: 5vh;
-      padding-bottom: 5vh;
+      // padding-top: 5vh;
+      margin-top:100px;
+      padding-bottom: 233px;
       background-color: black; 
+      height:fit-content;
+    }
+
+    .large_body{
+      padding-bottom:0;
     }
     
   .card-container-item-right-inverse-2{
