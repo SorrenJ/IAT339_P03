@@ -10,7 +10,7 @@ const flightPath = {
 {x:350, y:-50},{x:600, y:100},{x:800, y:200},
 {x:window.innerWidth, y:-120}
     ]
-}
+};
 
 const flightPath1 = {
     curviness:1.25,
@@ -22,7 +22,7 @@ const flightPath1 = {
 {x:-35, y:-50},{x:14, y:100},{x:10, y:0},
 {x:window.innerWidth, y:-250}
     ]
-}
+};
 const tween  = new TimelineLite();
 
 if ($(window).width() > 800){
