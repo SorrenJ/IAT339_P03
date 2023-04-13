@@ -160,7 +160,7 @@ position: absolute;
 // margin-bottom:100px;
       font-size:1.5em;
       /* make content center */
-      display:column;
+      flex-direction: column;
       justify-content:center;
       align-items:center;
       text-align:center;
@@ -421,8 +421,8 @@ position: absolute;
    
   
        #bush_L{
-  transition: transform 1s ease reverse;
-  
+  transition: transform 5s ease-out;
+
        }   
       #bush_L:hover{
       animation: lefta 10s ease alternate;
@@ -446,7 +446,7 @@ position: absolute;
       transform-origin: center;
      transform-box:fill-box;
      animation-iteration-count: infinite;
-     transition: shine 1s ease-out reverse;
+     transition: shine 1s ease-out;
     }
     #bush_R{
       animation: shine 4s ease alternate;

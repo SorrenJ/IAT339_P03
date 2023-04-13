@@ -8,38 +8,26 @@
   <title>Sorren Jao - References</title>
 
   <link rel="icon" href="assets/logo.svg" sizes=96x96 />
-
   <link href="SCSS/sdt.css" rel="stylesheet">
   <link href="SCSS/navbar.css" rel="stylesheet">
-
-
   <link href="SCSS/inputform.css" rel="stylesheet">
   <link href="SCSS/containers.css" rel="stylesheet">
   <link href="SCSS/project.css" rel="stylesheet">
-
   <link href="SCSS/typing.css" rel="stylesheet">
-
-  <!-- <link href="SCSS/styleguide.css" rel="stylesheet"> -->
   <link href="SCSS/card.css" rel="stylesheet">
   <!-- font awesome icons -->
   <script src="https://kit.fontawesome.com/0b0401bad6.js" crossorigin="anonymous"></script>
 
-  <script type="text/javascript" src="JS/js/lib/jquery.min.js"></script>
-  <script type="text/javascript" src="JS/js/lib/highlight.pack.js"></script>
-  <script type="text/javascript" src="JS/js/lib/modernizr.custom.min.js"></script>
+
 </head>
 
 <body>
   <!-- Navbar starts here -->
   <header>
-    <!-- <button class="button" id="menu-toggle" aria-label="Menu" aria-controls="menu" aria-expanded="false">Menu</button> -->
-    <!-- header -->
     <div class="home_nav">
       <div class="home_nav-item">
         <div class="home_icon"><a href="index.html">
             <img src="assets/logo.svg" alt="logo"></a>
-          <!-- <p class="nav_heading">&nbsp;The Sweet Spot</p> -->
-          <!-- <div class="mobile_cart"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></div> -->
           <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
             <i class="fa fa-bars" style="font-size:24pt"></i>
           </a>
@@ -64,23 +52,12 @@
 
   <div class="project_banner">
     <h1>Styleguide</h1>
-
-
-
-
     <br><br>
-
-
-
   </div>
 
   <section>
 
-    <!-- brand identity section, composed of header then container below that is flex for the image and paragraph -->
-
     <div class="style_nav">
-
-
       <a href="index.html#project">
         <div class="button style-nav-item" style="background-color:#DF62BC;">← Back to projects</div>
       </a>
@@ -93,11 +70,6 @@
       <a href="#3">
         <div class="button style-nav-item">Font</div>
       </a>
-
-      <!-- <a href="#4">
-        <div class="style-nav-item">Final Product</div>
-      </a> -->
-
       <a href="#4">
         <div class="button style-nav-item">Interactive</div>
       </a>
@@ -112,10 +84,6 @@
       </a>
     </div>
     <section class="content" id="1">
-
-
-
-
       <h2>
         Brand Identity
       </h2>
@@ -124,10 +92,7 @@
       <img class="logo" style="width:50%" src="assets/Blossom_Tree.svg" alt="logo">
       <p> My brand identity is the cherry blossom to represent growth and new beginnings.</p>
 
-
     </section>
-
-
     <br>
     <br>
     <section class="content" id="2">
@@ -172,42 +137,31 @@
         <p style="display: inline"> #white - Dark Headings</p>
         <br><br>
 
-
       </div>
     </section>
     <section class="content" id="3">
-
       <h2>
         Typography & Text Elements
       </h2>
       <hr>
-
       <p>
         Headings use 'Verdana' Font-family. Body text including paragraphs and buttons use 'Verdana' font-family.
-
       </p>
+      <br><br>
 
-
-      <h1>Heading 1</h1>
+      <h1 style="line-height: normal;">Heading 1</h1>
 
       <h2>Heading 2</h2>
 
       <h3>Heading 3</h3>
 
       <h4 style="color:black">Heading 4</h4>
-
-
-
       <p>Body Text</p>
-
-
       <p>Caption Text</p>
-      </p>
+<br><br>
+      <div style="background:black; color:white; padding:10px;" >
 
-
-      <div style="background:black; color:white">
-
-        <h1>Heading 1</h1>
+        <h1 style="line-height: normal;">Heading 1</h1>
 
         <h2>Heading 2</h2>
 
@@ -215,13 +169,8 @@
 
         <h4>Heading 4</h4>
 
-
-
         <p>Body Text</p>
-
-
         <p>Caption Text</p>
-        </p>
       </div>
     </section>
     <br><br>
@@ -245,25 +194,25 @@
       <a target="_blank" href="https://olc.sfu.ca/index.php/blog/boosting-productivity-web-development">
         <div class="button"> Read blog </div>
       </a>
-<br><br>
-<h3>
- Inputs & Textfields
-</h3>
-<br>
-<div class="input-container name">
-  <input type="email" id="email-address" name="_replyto" placeholder=" " required="required">
-  <label class="placeholder-text" for="email-address">
-    <span class="placeholder-name">Email</span>
-  </label>
-</div>
-<br>
+      <br><br>
+      <h3>
+        Inputs & Textfields
+      </h3>
+      <br>
+      <div class="input-container name">
+        <input type="email" id="blank-address" name="_replyto" placeholder=" " required="required">
+        <label class="placeholder-text" for="blank-address">
+          <span class="placeholder-name">Email</span>
+        </label>
+      </div>
+      <br>
 
-<div class="input-container name">
-  <textarea rows="5" name="message" id="message" placeholder=" " required=""></textarea>
-  <label class="placeholder-text" for="message">
-    <span class="placeholder-name">Message</span>
-  </label>
-</div>
+      <div class="input-container name">
+        <textarea rows="5" name="blank-message" id="blank-message" placeholder=" " required=""></textarea>
+        <label class="placeholder-text" for="blank-message">
+          <span class="placeholder-name">Message</span>
+        </label>
+      </div>
       <br><br>
       <h3>
         Gallery
@@ -299,13 +248,8 @@
       <br>
       <br>
 
-
-
     </section>
 
-
-
-    
     <div class="styleguide_projectcontainer">
       <section class="section2">
         <div class="greenbox">
@@ -331,36 +275,22 @@
           </div>
         </div>
 
-
-
-
-
       </section>
-
-
     </div>
-
-
-
-
-
     <section id="5" class="content">
       <h2>
         About Slideshow
       </h2>
       <hr>
     </section>
-
     <div class="styleguide_slidecontainer">
       <!-- 2nd card -->
-      <div id="contact" class="card">
+      <div class="card">
         <div class="card-container-inverse">
           <div class="card-container-item-left-inverse contact_box">
             <h1>Light</h1>
 
-
           </div>
-
           <div class="card-container-item-right-inverse ">
             <h1>Dark</h1>
           </div>
@@ -369,21 +299,12 @@
       </div>
       <!-- end of card 2 -->
 
-
       <br><br>
       <!-- 1st card -->
       <div class="card">
 
-
-
         <!-- start of card container-->
         <div class="card-container-inverse-2">
-
-
-
-
-
-
           <!-- start of 1st item -->
           <div class="card-container-item-left-inverse-2">
             <br>
@@ -391,21 +312,12 @@
             <br>
           </div>
           <!-- end of 1st item -->
-
           <div class="triangleTopLeft-inverse"></div>
-
-
-
           <!-- start of 2nd item -->
           <div class="card-container-item-right-inverse-2">
-
             <h1 style="color:black">Light</h1>
-
-
           </div>
           <!-- end of 2nd item -->
-
-
         </div>
         <!-- end of card container-->
       </div>
@@ -413,27 +325,37 @@
 
 
     </div>
-
-
     <section id="6" class="content ">
-      
+
       <h2>
         Scroll Animations
       </h2>
       <hr>
-<a href="Scroll_Animations.html"><h2>Checkout my scroll animations here</h2></a>
+      <p>Scroll animations has been disabled for mobile mode -> maxwidth: 800px. I did this to avoid any interference with
+        the viewport for mobile.</p>
+      <br>
+      <p>Refreshing the browser is required to update animation.</p>
+      <br>
+      <p>GSAP and scrollmagic library was referenced from: <a href="https://scrollmagic.io/">https://scrollmagic.io/</a>
+      </p>
+      <br>
+      <p><a href="blossom_animation.html">Blossom animation with typewriter</a></p>
+      <br>
+    <p><a href="growing_animationhtml">Growing plant animation</a></p>
     </section>
     <br><br>
     <section id="7" class="content ">
-      
+
       <h2>
-       Github Link
+        Github Link
       </h2>
       <hr>
-<a href="https://github.com/SorrenJ/IAT339_P03"><h2>Visit my Github here</h2></a>
+      <a href="https://github.com/SorrenJ/IAT339_P03">
+        <h2>Visit my Github here</h2>
+      </a>
     </section>
 
-<br><br><br><br><br>
+    <br><br><br><br><br>
 
 
   </section>
@@ -488,13 +410,9 @@
                   </label>
                 </div>
               </fieldset>
-
-
-
-
               <br>
-              <div class="button next"> <input class="button next" type="submit" value="Submit" style="margin:auto;">
-              </div>
+              <input class="button next" type="submit" value="Submit" style="margin:auto;">
+
             </form>
 
 
@@ -639,13 +557,10 @@
 
   <script src="JS/typing_observer.js"></script>
   <script src="JS/typing_observer2.js"></script>
-  <script src="JS/element_fadein.js"></script>
 
 
 
 
-  <script src="JS/Blossom_Transition_responsive.js">defer</script>
-  <script src="JS/grow_app_tree.js"></script>
 
 </body>
 
